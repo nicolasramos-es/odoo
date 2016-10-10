@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="pos_report_receipt"
+          inherit_id="point_of_sale.report_receipt">
+
+    <xpath expr="//div[@class='col-xs-12 text-center']/h2" position="before">
+
+        <t t-esc="o.name"/><br />
+        <t t-esc="o.pos_reference"/>
+    </xpath>
+
+    <xpath expr="//div[@class='col-xs-12 text-center']/h2" position="after">
+        <t t-esc="o.user_id.company_id.name"/><br /><br />
+        VAT: <t t-esc="o.user_id.company_id.vat"/><br />
+    </xpath>
+    <xpath expr="//div[@class='col-xs-12 text-center']" position="inside">
+        <div class="customer" t-if="o.partner_id">
+            <div class="customer_title">
+                <span class="customer_title_lbl">Customer:</span>
+            </div>
+            <div class="customer_name">
+                <span class="customer_name_lbl">Name:</span>
+                <span t-if="o.partner_id.name" class="customer_name_value">
+                    <t t-esc="o.partner_id.name"/>
+                </span>
+            </div>
+            <div class="customer_vat">
+                <span class="customer_vat_lbl">VAT:</span>
+                <span t-if="o.partner_id.vat" class="customer_vat_value">
+                    <t t-esc="o.partner_id.vat"/>
+                </span>
+            </div>
+            <div class="customer_street">
+                <span class="customer_street_lbl">Address:</span>
+                <span t-if="o.partner_id.street" class="customer_street_value">
+                    <t t-esc="o.partner_id.street"/>
+                </span>
+            </div>
+        </div>
+    </xpath>
+    <xpath expr="//div[@class='col-xs-12 text-center']/h2" position="attributes">
+        <attribute name="style">display:none;</attribute>
+    </xpath>
+    <xpath expr="//div[@class='col-xs-12 text-center']/div[@t-field='o.partner_id']" position="attributes">
+        <attribute name="style">display:none;</attribute>
+    </xpath>
+
+</template>
+</data>
+</openerp>

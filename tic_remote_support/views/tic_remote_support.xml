@@ -19,7 +19,7 @@
             <xpath expr="//page[@name='internal_notes']" position="after">
                 <page name="remotesupport" string="Remote Support" attrs="{'invisible': [('supportbool','=', False)]}">
                     <field name="remotes_ids" nolabel="1">
-                    <tree editable="bottom">
+                    <tree>
                         <field name="name"/>
                         <field name="remote_type" widget="selection"/>
                         <field name="pc_type" widget="selection"/>

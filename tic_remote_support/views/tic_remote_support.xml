@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="partner_view_remote_support_bool" model="ir.ui.view">
+        <field name="name">res.partner.remote.support.bool</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='category_id']" position="after">
+               <field name="supportbool"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="partner_view_remote_support" model="ir.ui.view">
+        <field name="name">res.partner.remote.support</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='internal_notes']" position="after">
+                <page name="remotesupport" string="Remote Support" attrs="{'invisible': [('supportbool','=', False)]}">
+                    <field name="remotes_ids" nolabel="1">
+                    <tree editable="bottom">
+                        <field name="name"/>
+                        <field name="remote_type" widget="selection"/>
+                        <field name="pc_type" widget="selection"/>
+                        <field name="remote_id"/>
+                        <field name="remote_ip"/>
+                        <field name="remote_port"/>
+                        <field name="remote_username"/>
+                        <field name="remote_password"/>
+                        <field name="remote_notes"/>
+                    </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="tic_remote_support_view_tree" model="ir.ui.view">
+        <field name="name">tic.remote.support.view.tree</field>
+        <field name="model">tic.remote.support.service</field>
+        <field name="arch" type="xml">
+            <tree string="Remote Support">
+                <field name="name"/>
+                <field name="remote_type"/>
+                <field name="pc_type"/>
+                <field name="remote_id"/>
+                <field name="remote_ip"/>
+                <field name="remote_port"/>
+                <field name="remote_username"/>
+                <field name="remote_password"/>
+                <field name="remote_notes"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="tic_remote_support_view_form" model="ir.ui.view">
+        <field name="name">tic.remote.support.view.form</field>
+        <field name="model">tic.remote.support.service</field>
+        <field name="arch" type="xml">
+            <form string="Remote Support">
+                <sheet>
+                    <group>
+                        <div class="oe_title oe_left">
+                            <div class="oe_edit_only">
+                                <label for="name"/>
+                            </div>
+                            <h1>
+                                <field name="name" default_focus="1" placeholder="Name"/>
+                            </h1>
+                        </div>
+                    </group>
+                    <group colspan="4" col="4">
+                        <field name="remote_type" widget="selection"/>
+                        <field name="pc_type" widget="selection"/>
+                        <field name="remote_ip"/>
+                        <field name="remote_port"/>
+                        <field name="remote_username"/>
+                        <field name="remote_password"/>
+                    </group>
+                    <group>
+                        <field name="remote_id"/>
+                    </group>
+                    <group>
+                        <field name="remote_notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

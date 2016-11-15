@@ -44,6 +44,7 @@
     'category': 'Extra Rights',
     'version': '10.0.2.0.0',
     'license': 'AGPL-3',
+    'images': ['static/description/screen_01.png'],
     'depends': [
         'base',
     ],

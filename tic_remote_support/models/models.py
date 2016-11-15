@@ -38,7 +38,7 @@ from odoo import api, fields, models, _
 class TicRemoteSupportService(models.Model):
     _name = 'tic.remote.support.service'
 
-    name = fields.Char(string="Name", required=False )
+    name = fields.Char(string="Name", required=True )
     remote_type = fields.Selection(string="Remote Type", selection=[
         ('teamviewer', 'TeamViewer'),
         ('weezo', 'Weezo'),
@@ -59,7 +59,8 @@ class TicRemoteSupportService(models.Model):
         ('router', 'Router'),
         ('other', 'Other')], required=False, )
     remote_id = fields.Char(string="ID", required=False, )
-    remote_ip = fields.Char(string="Ip", required=False, )
+    remote_serial = fields.Char(string="Serial", required=False, )
+    remote_ip = fields.Char(string="IP", required=False, )
     remote_port = fields.Integer(string="Port", required=False, )
     remote_username = fields.Char(string="Username", required=False, )
     remote_password = fields.Char(string="Password", required=False, )

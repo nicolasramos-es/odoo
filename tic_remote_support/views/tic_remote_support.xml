@@ -73,13 +73,12 @@
                     <group colspan="4" col="4">
                         <field name="remote_type" widget="selection"/>
                         <field name="pc_type" widget="selection"/>
-                        <field name="remote_ip"/>
-                        <field name="remote_port"/>
+                        <field name="remote_ip" placeholder="127.0.0.1"/>
+                        <field name="remote_port" placeholder="3386"/>
                         <field name="remote_username"/>
                         <field name="remote_password"/>
-                    </group>
-                    <group>
                         <field name="remote_id"/>
+                        <field name="remote_serial"/>
                     </group>
                     <group>
                         <field name="remote_notes"/>

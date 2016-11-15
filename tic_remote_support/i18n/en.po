@@ -1,0 +1,199 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tic_remote_support
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-15 19:46+0000\n"
+"PO-Revision-Date: 2016-11-15 19:47+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.11\n"
+"Last-Translator: \n"
+"Language: en\n"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,remote_type:0
+msgid "AMMYY"
+msgstr "AMMYY"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,pc_type:0
+msgid "Backup"
+msgstr "Backup"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,pc_type:0
+msgid "Camera"
+msgstr "Camera"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,remote_type:0
+msgid "Chrome"
+msgstr "Chrome"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_create_date
+msgid "Created on"
+msgstr "Created on"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_pc_type
+msgid "Device Type"
+msgstr "Device Type"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_id
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_remote_id
+msgid "ID"
+msgstr "ID"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_remote_ip
+msgid "Ip"
+msgstr "Ip"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service___last_update
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_write_uid
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_write_date
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_name
+#: model:ir.ui.view,arch_db:tic_remote_support.tic_remote_support_view_form
+msgid "Name"
+msgstr "Name"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_remote_notes
+msgid "Notes"
+msgstr "Notes"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,pc_type:0
+#: selection:tic.remote.support.service,remote_type:0
+msgid "Other"
+msgstr "Other"
+
+#. module: tic_remote_support
+#: model:ir.model,name:tic_remote_support.model_res_partner
+msgid "Partner"
+msgstr "Partner"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_remote_password
+msgid "Password"
+msgstr "Password"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_remote_port
+msgid "Port"
+msgstr "Port"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,pc_type:0
+msgid "Print"
+msgstr "Print"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,remote_type:0
+msgid "Remote Desktop"
+msgstr "Remote Desktop"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_res_partner_remotes_ids
+#: model:ir.ui.view,arch_db:tic_remote_support.partner_view_remote_support
+#: model:ir.ui.view,arch_db:tic_remote_support.tic_remote_support_view_form
+#: model:ir.ui.view,arch_db:tic_remote_support.tic_remote_support_view_tree
+msgid "Remote Support"
+msgstr "Remote Support"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_res_partner_supportbool
+msgid "Remote Support?"
+msgstr "Remote Support?"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_remote_type
+msgid "Remote Type"
+msgstr "Remote Type"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,pc_type:0
+msgid "Router"
+msgstr "Router"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,remote_type:0
+msgid "SSH"
+msgstr "SSH"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,pc_type:0
+msgid "Server"
+msgstr "Server"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,pc_type:0
+msgid "Swich"
+msgstr "Swich"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,remote_type:0
+msgid "TeamViewer"
+msgstr "TeamViewer"
+
+#. module: tic_remote_support
+#: model:ir.model.fields,field_description:tic_remote_support.field_tic_remote_support_service_remote_username
+msgid "Username"
+msgstr "Username"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,remote_type:0
+msgid "VNC"
+msgstr "VNC"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,remote_type:0
+msgid "Web"
+msgstr "Web"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,remote_type:0
+msgid "Weezo"
+msgstr "Weezo"
+
+#. module: tic_remote_support
+#: selection:tic.remote.support.service,pc_type:0
+msgid "WorkStation"
+msgstr "WorkStation"
+
+#. module: tic_remote_support
+#: model:ir.model,name:tic_remote_support.model_tic_remote_support_service
+msgid "tic.remote.support.service"
+msgstr "tic.remote.support.service"

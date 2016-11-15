@@ -7,6 +7,11 @@ Tic Remote Support
 
 This module adds new partner tab to add remote access data to your clients such as TeamViewer, VNC, ...
 
+
+.. figure:: ../tic_remote_support/static/description/screen_01.png
+     :alt: Tic Remote Support Odoo Difusión Visual
+     :width: 800 px
+
 Installation
 ============
 

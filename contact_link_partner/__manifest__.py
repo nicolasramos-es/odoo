@@ -39,17 +39,15 @@
 
     # 'description': put the module description in README.rst
 
-    'author': 'Difusión Visual',
+    'author': 'Difusión Visual, IngenieriaCloud',
     'website': "http://difusionvisual.com",
     'category': 'Extra Rights',
-    'version': '10.0.1.0.0',
+    'version': '10.0.1.1.0',
     'license': 'AGPL-3',
     'depends': [
         'base',
     ],
     'data': [
-        # 'security/ir.model.access.csv',
-        #'templates.xml',
         'views/view.xml',
     ],
 

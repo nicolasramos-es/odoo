@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
-    <data>
+<odoo>
 	  <!-- Inherit Form View to Modify it -->
         <record id="partner_view_contact_link" model="ir.ui.view">
             <field name="name">res.partner.link.form</field>
@@ -13,5 +12,4 @@
                 </xpath>
             </field>
         </record>
-    </data>
-</openerp>
+</odoo>

@@ -34,10 +34,10 @@
 {
     "name": "Sale Price in purchase order",
     "summary": "Add sale price in purchase order",
-    "version": "10.0.1.0",
+    "version": "10.0.2.0",
     "category": "Purchase",
     "website": "http://www.difusionvisual.com",
-    "author": "Difusión Visual",
+    "author": "Difusión Visual, IngenieríaCloud",
     "license": "AGPL-3",
     "application": False,
     "installable": True,

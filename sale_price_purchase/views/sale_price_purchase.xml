@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<openerp>
-<data>
+<odoo>
     <record model="ir.ui.view" id="sale_price_purchase_order_line_form">
         <field name="name">sale_price_purchase.order.line.form</field>
         <field name="model">purchase.order.line</field>
@@ -34,5 +32,4 @@
                  </xpath>
          </field>
      </record>
-</data>
-</openerp>
+</odoo>

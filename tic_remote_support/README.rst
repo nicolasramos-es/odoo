@@ -46,6 +46,7 @@ Contributors
 ------------
 
 * Nicolás Ramos <contacto@difusionvisual.com>
+* Antonio Cánovas <antonio.canovas@ingenieriacloud.com>
 
 Maintainer
 ----------

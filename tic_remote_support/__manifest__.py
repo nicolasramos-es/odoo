@@ -39,7 +39,7 @@
 
     # 'description': put the module description in README.rst
 
-    'author': 'Difusión Visual',
+    'author': 'Difusión Visual, IngenieríaCloud',
     'website': "http://difusionvisual.com",
     'category': 'Extra Rights',
     'version': '10.0.2.0.0',

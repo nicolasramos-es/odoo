@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<openerp>
-<data>
+<odoo>
     <record model="ir.ui.view" id="recommend_price_form">
         <field name="name">recommend_price_product_form</field>
         <field name="model">product.template</field>
@@ -24,6 +22,4 @@
             </field>
         </field>
     </record>
-   
-</data>
-</openerp>
+</odoo>

@@ -34,6 +34,7 @@
 
 from odoo import api, fields, models
 
+
 class ContactLink(models.Model):
     _inherit = 'res.partner'
 

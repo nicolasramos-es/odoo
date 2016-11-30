@@ -35,7 +35,8 @@
     'name': "Tic Remote Support",
 
     'summary': """
-        This module adds new partner tab to add remote access data to your clients such as TeamViewer, VNC, ...""",
+        This module adds new partner tab to add remote access data
+        to your clients such as TeamViewer, VNC, ...""",
 
     # 'description': put the module description in README.rst
 
@@ -54,4 +55,3 @@
     ],
 
 }
-

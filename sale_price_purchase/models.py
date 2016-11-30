@@ -32,10 +32,11 @@
 ###############################################
 
 
-from odoo import api, fields, models
+from odoo import fields, models
 
 
 class PurchaseOrderLine(models.Model):
     _inherit = "purchase.order.line"
 
-    sale_price = fields.Float('Sale price', related='product_id.list_price',store=False)
+    sale_price = fields.Float('Sale price', related='product_id.list_price',
+                              store=False)

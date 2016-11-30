@@ -32,13 +32,13 @@
 #
 ###############################################
 
-from odoo import api, fields, models, _
+from odoo import fields, models
 
 
 class TicRemoteSupportService(models.Model):
     _name = 'tic.remote.support.service'
 
-    name = fields.Char(string="Name", required=True )
+    name = fields.Char(string="Name", required=True)
     remote_type = fields.Selection(string="Remote Type", selection=[
         ('teamviewer', 'TeamViewer'),
         ('weezo', 'Weezo'),
@@ -66,8 +66,10 @@ class TicRemoteSupportService(models.Model):
     remote_password = fields.Char(string="Password", required=False, )
     remote_notes = fields.Text(string="Notes", required=False, )
 
+
 class TicRemoteSupport(models.Model):
     _inherit = 'res.partner'
 
     supportbool = fields.Boolean(string="Remote Support?")
-    remotes_ids = fields.Many2many(comodel_name="tic.remote.support.service", string="Remote Support", store=True)
+    remotes_ids = fields.Many2many(comodel_name="tic.remote.support.service", 
+                                   string="Remote Support", store=True)

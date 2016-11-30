@@ -71,5 +71,5 @@ class TicRemoteSupport(models.Model):
     _inherit = 'res.partner'
 
     supportbool = fields.Boolean(string="Remote Support?")
-    remotes_ids = fields.Many2many(comodel_name="tic.remote.support.service", 
+    remotes_ids = fields.Many2many(comodel_name="tic.remote.support.service",
                                    string="Remote Support", store=True)

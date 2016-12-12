@@ -47,6 +47,7 @@
     'depends': [
         'base',
         'stock',
+        'product_expiry',
     ],
     'data': [
         'views/stock_lot_dates.xml',

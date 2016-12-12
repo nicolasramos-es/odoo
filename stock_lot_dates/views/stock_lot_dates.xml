@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stock_lot_dates_view" model="ir.ui.view">
+        <field name="name">stock.lot.dates.view</field>
+        <field name="model">stock.production.lot</field>
+        <field name="inherit_id" ref="stock.view_production_lot_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[@name='create_date']" position="after">
+                <field name="use_date"/>
+                <field name="life_date"/>
+                <field name="removal_date"/>
+                <field name="alert_date"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

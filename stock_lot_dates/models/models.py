@@ -32,10 +32,8 @@
 #
 ###############################################
 
-from odoo import fields, models
+from odoo import models
 
 
 class StockLotDates(models.Model):
     _inherit = 'stock.production.lot'
-
-

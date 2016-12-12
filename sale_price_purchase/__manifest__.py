@@ -42,6 +42,7 @@
     "application": False,
     "installable": True,
     "depends": [
+        "base",
         "purchase",
     ],
     "data": [

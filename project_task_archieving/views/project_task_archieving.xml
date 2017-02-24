@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+        <record id="archive_bool_project_task" model="ir.ui.view">
+            <field name="name">project.archive.task</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date_deadline']" position="after">
+                    <field name="archivebool" invisible="1"/>
+                </xpath>
+                <xpath expr="//field[@name='kanban_state']" position="before">
+                    <button type="object" name="archive_task" class="oe_stat_button btn btn-default oe_inline" attrs="{'invisible': [('archivebool','=', True)]}">
+                            <div class="stat_button_icon fa fa-archive fa-fw"></div>
+                                        <div>Archive</div>
+                    </button>
+                    <button type="object" name="unarchive_task" class="oe_stat_button btn btn-default oe_inline" attrs="{'visible': [('archivebool','=', False)],'invisible': [('archivebool','=', False)]}">
+                            <div class="stat_button_icon fa fa-archive fa-fw"></div>
+                                        <div>UnArchive</div>
+                    </button>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="project.act_project_project_2_project_task_all">
+            <field name="name">Tasks</field>
+            <field name="res_model">project.task</field>
+            <field name="view_mode">kanban,tree,form,calendar,gantt,graph</field>
+            <field name="domain">[]</field>
+            <field name="context">{
+                    'search_default_project_id': [active_id],
+                    'search_default_unarchive':1,
+                    'default_project_id': active_id,
+                    'active_test': False,
+                }</field>
+            <field name="search_view_id" ref="project.view_task_search_form"/>
+        </record>
+
+        <record id="action_view_task" model="ir.actions.act_window">
+            <field name="name">Tasks</field>
+            <field name="res_model">project.task</field>
+            <field name="view_mode">kanban,tree,form,calendar,gantt,graph</field>
+            <field name="domain">[]</field>
+            <field name="context">{'search_default_unarchive':1}</field>
+            <field name="search_view_id" ref="project.view_task_search_form"/>
+            <field name="help" type="html">
+                <p>
+                    Odoo's project management allows you to manage the pipeline
+                    of tasks in order to get things done efficiently. You can
+                    track progress, discuss on tasks, attach documents, etc.
+                </p>
+            </field>
+        </record>
+
+        <delete model="ir.ui.menu" id="project.menu_action_view_task" />
+        <menuitem action="action_view_task" id="menu_action_view_task" parent="project.menu_project_management" sequence="5"/>
+
+        <record id="open_view_task_list_kanban" model="ir.actions.act_window.view">
+            <field name="sequence" eval="0"/>
+            <field name="view_mode">kanban</field>
+            <field name="domain">[('archivebool','=',False)]</field>
+            <field name="context">{'search_default_unarchive':1}</field>
+            <field name="act_window_id" ref="action_view_task"/>
+        </record>
+
+
+        <record id="project.view_task_search_form" model="ir.ui.view">
+            <field name="name">project.task.search.form</field>
+            <field name="model">project.task</field>
+            <field name="arch" type="xml">
+               <search string="Tasks">
+                    <field name="name" string="Tasks"/>
+                    <field name="categ_ids"/>
+                    <field name="partner_id"/>
+                    <field name="project_id"/>
+                    <field name="reviewer_id"/>
+                    <field name="user_id"/>
+                    <field name="stage_id"/>
+                    <filter string="My Tasks" domain="[('user_id','=',uid)]"/>
+                    <filter string="Unassigned" name="unassigned" domain="[('user_id', '=', False)]"/>
+                    <filter string="Archived" name="archive" domain="[('archivebool', '=', True)]"/>
+                    <filter string="UnArchived" name="unarchive" domain="[('archivebool', '=', False)]"/>
+                    <separator/>
+                    <filter string="New" name="draft" domain="[('stage_id.sequence', '&lt;=', 1)]"/>
+                    <separator/>
+                    <filter string="New Mail" name="message_unread" domain="[('message_unread','=',True)]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Project" name="project" context="{'group_by':'project_id'}"/>
+                        <filter string="Task" context="{'group_by':'name'}"/>
+                        <filter string="Assigned to" name="User" context="{'group_by':'user_id'}"/>
+                        <filter string="Stage" name="Stage" context="{'group_by':'stage_id'}"/>
+                        <filter string="Company" context="{'group_by':'company_id'}" groups="base.group_multi_company"/>
+                        <separator/>
+                        <filter string="Last Message" name="group_message_last_post" context="{'group_by':'message_last_post:week'}"/>
+                        <filter string="Assignation Month" context="{'group_by':'date_start:month'}" help="Creation Date"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+    </data>
+</openerp>

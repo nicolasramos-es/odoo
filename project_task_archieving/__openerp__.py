@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 ##############################################
 #
@@ -30,12 +31,21 @@
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 ###############################################
+{
+    "name": "Project Task Archive",
+    "summary": "project_task_archieving",
+    "version": "8.0.1.0",
+    "category": "Odoo Education",
+    "website": "http://www.difusionvisual.com",
+    "author": "Difusión Visual, IngenieríaCloud",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    'depends': [
+        'project',
 
-
-from openerp import fields, models
-
-
-class ProductProduct(models.Model):
-    _inherit = "product.template"
-
-    recommend_price = fields.Float(string='PVR', store=True)
+    ],
+    "data": [
+        'views/project_task_archieving.xml',
+    ],
+}

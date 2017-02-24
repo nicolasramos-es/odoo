@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 ##############################################
 #
@@ -31,11 +32,27 @@
 #
 ###############################################
 
+from openerp import models, fields, api
 
-from openerp import fields, models
+
+class project_task_order(models.Model):
+    _inherit = 'project.task'
+
+    archivebool = fields.Boolean('Archive', store=True, track_visibility='onchange')
 
 
-class ProductProduct(models.Model):
-    _inherit = "product.template"
+    def _track_subtype(self, init_values):
+        if 'archivebool' in init_values:
+            return 'mail.mt_comment'
+        return False
 
-    recommend_price = fields.Float(string='PVR', store=True)
+    @api.one
+    def archive_task(self):
+        self.date_deadline = False
+        self.write({'archivebool': 'True'})
+        return True
+
+    @api.one
+    def unarchive_task(self):
+        self.write({'archivebool': ''})
+        return True

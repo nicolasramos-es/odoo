@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 ##############################################
 #
@@ -30,12 +31,4 @@
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 ###############################################
-
-
-from openerp import fields, models
-
-
-class ProductProduct(models.Model):
-    _inherit = "product.template"
-
-    recommend_price = fields.Float(string='PVR', store=True)
+import models

@@ -33,7 +33,7 @@
 ###############################################
 {
     "name": "Project Task Supervisor",
-    "summary": "project_task_supervisor",
+    "summary": "Project Task Supervisor",
     "version": "10.0.1.0",
     "category": "Project",
     "website": "http://www.difusionvisual.com",

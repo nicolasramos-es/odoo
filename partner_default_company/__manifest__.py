@@ -33,7 +33,7 @@
 ###############################################
 {
     "name": "Partner default company",
-    "summary": "partner_default_company",
+    "summary": "Partner default company type",
     "version": "10.0.1.0",
     "category": "Custom modifications",
     "website": "http://www.difusionvisual.com",

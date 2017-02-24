@@ -33,7 +33,7 @@
 ###############################################
 {
     "name": "CRM Tracking date deadline",
-    "summary": "crm_tracking_date_deadline",
+    "summary": "CRM Tracking date deadline",
     "version": "10.0.1.0",
     "category": "Sales",
     "website": "http://www.difusionvisual.com",

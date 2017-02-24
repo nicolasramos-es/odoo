@@ -37,7 +37,7 @@
     "version": "10.0.1.0",
     "category": "Custom modifications",
     "website": "http://www.difusionvisual.com",
-    "author": "Difusión Visual & Ingeniería Cloud",
+    "author": "Difusión Visual, IngenieríaCloud",
     "contributors": [
         "Nicolás Ramos <contacto@difusionvisual.com>",
         "Antonio Cánovas <antonio.canovas@ingenieriacloud.com>",

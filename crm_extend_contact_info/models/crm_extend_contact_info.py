@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 ##############################################
 #
@@ -30,36 +31,15 @@
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 ###############################################
+from odoo import models, fields, api, _
 
 
-from odoo import fields, models, api
+class CrmExtendInfo(models.Model):
+    _inherit = 'crm.lead'
+
+    phone_info = fields.Char(string="Phone", required=False, store=True)
+    email_info = fields.Char(string="Email", required=False, store=True)
 
 
-class ProductProduct(models.Model):
-    _inherit = "product.template"
-
-    recommend_price = fields.Float(string='PVR', store=True)
 
 
-class SaleOrderLine(models.Model):
-    _inherit = "sale.order.line"
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
-
-
-class AccountInvoiceLine(models.Model):
-    _inherit = "account.invoice.line"
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
-
-
-class StockPackOperation(models.Model):
-    _inherit = "stock.pack.operation"
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
-
-
-class StockMove(models.Model):
-    _inherit = 'stock.move'
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)

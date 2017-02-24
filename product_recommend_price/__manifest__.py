@@ -44,6 +44,8 @@
     "depends": [
         "base",
         "product",
+        "account",
+        "sale",
     ],
     "data": [
         "views/recommend_view.xml",

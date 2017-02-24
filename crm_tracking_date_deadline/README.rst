@@ -3,10 +3,10 @@
     :alt: License: AGPL-3
 
 
-Contact Link Partner
+CRM Tracking date deadline
 
 
-This module add button to link contact partner
+This module add tracking in CRM
 
 Installation
 ============
@@ -27,7 +27,8 @@ Usage
 
 To use this module, you need to:
 
-#. Go to partner an clic button contact
+#. Nothing special is needed.
+
 
 .. repo_id is available in https://github.com/OCA/maintainer-tools/blob/master/tools/repos_with_ids.txt
 .. branch is "8.0" for example

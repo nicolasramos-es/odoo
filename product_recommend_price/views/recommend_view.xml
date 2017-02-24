@@ -12,6 +12,17 @@
         </field>
     </record>
 
+    <record model="ir.ui.view" id="recommend_price_form_two">
+        <field name="name">recommend_price_product_form_two</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <field name="lst_price" position="after">
+                <field name="recommend_price" widget="monetary"/>
+            </field>
+        </field>
+    </record>
+
     <record model="ir.ui.view" id="recommend_price_tree">
         <field name="name">recommend_price_product_tree</field>
         <field name="model">product.template</field>

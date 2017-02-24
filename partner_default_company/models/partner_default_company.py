@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 ##############################################
 #
@@ -30,36 +31,19 @@
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 ###############################################
+from odoo import models, fields, api, _
 
 
-from odoo import fields, models, api
+class ResPartner(models.Model):
+    _inherit = 'res.partner'
+
+    company_type = fields.Selection(string='Company Type',
+                                    selection=[('person', 'Individual'), ('company', 'Company')],
+                                    compute='_compute_company_type', readonly=False, default="company")
+
+    @api.depends('is_company')
+    def _compute_company_type(self):
+        for partner in self:
+            partner.company_type = 'company'
 
 
-class ProductProduct(models.Model):
-    _inherit = "product.template"
-
-    recommend_price = fields.Float(string='PVR', store=True)
-
-
-class SaleOrderLine(models.Model):
-    _inherit = "sale.order.line"
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
-
-
-class AccountInvoiceLine(models.Model):
-    _inherit = "account.invoice.line"
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
-
-
-class StockPackOperation(models.Model):
-    _inherit = "stock.pack.operation"
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
-
-
-class StockMove(models.Model):
-    _inherit = 'stock.move'
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)

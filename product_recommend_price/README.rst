@@ -20,14 +20,14 @@ Configuration
 
 To configure this module, you need to:
 
-#. Nothing special is needed to install this module.
+#. Nothing special is needed.
 
 Usage
 =====
 
 To use this module, you need to:
 
-#. Go to product add recommend price
+#. Nothing special is needed.
 
 
 .. repo_id is available in https://github.com/OCA/maintainer-tools/blob/master/tools/repos_with_ids.txt

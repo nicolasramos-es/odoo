@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 ##############################################
 #
@@ -30,36 +31,22 @@
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 ###############################################
+{
+    "name": "Partner default company",
+    "summary": "partner_default_company",
+    "version": "10.0.1.0",
+    "category": "Custom modifications",
+    "website": "http://www.difusionvisual.com",
+    "author": "Difusión Visual & Ingeniería Cloud",
+    "contributors": [
+        "Nicolás Ramos <contacto@difusionvisual.com>",
+        "Antonio Cánovas <antonio.canovas@ingenieriacloud.com>",
+    ],
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    'depends': ['crm'],
+    'data': ['views/partner_default_company.xml'],
+}
 
 
-from odoo import fields, models, api
-
-
-class ProductProduct(models.Model):
-    _inherit = "product.template"
-
-    recommend_price = fields.Float(string='PVR', store=True)
-
-
-class SaleOrderLine(models.Model):
-    _inherit = "sale.order.line"
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
-
-
-class AccountInvoiceLine(models.Model):
-    _inherit = "account.invoice.line"
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
-
-
-class StockPackOperation(models.Model):
-    _inherit = "stock.pack.operation"
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
-
-
-class StockMove(models.Model):
-    _inherit = 'stock.move'
-
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)

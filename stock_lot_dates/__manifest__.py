@@ -48,6 +48,9 @@
         'base',
         'stock',
         'product_expiry',
+        'sale',
+        'sale_stock',
+        'procurement',
     ],
     'data': [
         'views/stock_lot_dates.xml',

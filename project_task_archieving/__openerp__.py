@@ -33,7 +33,7 @@
 ###############################################
 {
     "name": "Project Task Archive",
-    "summary": "project_task_archieving",
+    "summary": "Archive Task in project",
     "version": "8.0.1.0",
     "category": "Odoo Education",
     "website": "http://www.difusionvisual.com",

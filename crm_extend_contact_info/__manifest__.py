@@ -33,7 +33,7 @@
 ###############################################
 {
     "name": "Crm Extend Contact Info",
-    "summary": "cAdd extra fields in CRM",
+    "summary": "Add extra fields in CRM",
     "version": "10.0.1.0",
     "category": "Sales",
     "website": "http://www.difusionvisual.com",

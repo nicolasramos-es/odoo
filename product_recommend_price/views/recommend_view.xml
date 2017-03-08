@@ -33,4 +33,18 @@
             </field>
         </field>
     </record>
+
+    <record id="company_extra_option_form_view" model="ir.ui.view">
+        <field name="name">company.extra.option.form.view</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook/page/group" position="after">
+                <separator string="Extra Options" name="extra_option"/>
+                <group col="4" colspan="4">
+                    <field name="recommend_bool"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
 </odoo>

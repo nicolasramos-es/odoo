@@ -38,28 +38,39 @@ from odoo import fields, models, api
 class ProductProduct(models.Model):
     _inherit = "product.template"
 
-    recommend_price = fields.Float(string='PVR', store=True)
+    recommend_price = fields.Float(string='Recommend Price', store=True)
 
 
 class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
+    recommend_price = fields.Float(string='Recommend Price', related='product_id.recommend_price', store=True)
 
 
 class AccountInvoiceLine(models.Model):
     _inherit = "account.invoice.line"
 
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
+    recommend_price = fields.Float(string='Recommend Price', related='product_id.recommend_price', store=True)
 
 
 class StockPackOperation(models.Model):
     _inherit = "stock.pack.operation"
 
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
+    recommend_price = fields.Float(string='Recommend Price', related='product_id.recommend_price', store=True)
 
 
 class StockMove(models.Model):
     _inherit = 'stock.move'
 
-    recommend_price = fields.Float(string='PVR', related='product_id.recommend_price', store=True)
+    recommend_price = fields.Float(string='Recommend Price', related='product_id.recommend_price', store=True)
+
+
+class ResCompany(models.Model):
+    _inherit = 'res.company'
+
+    recommend_bool = fields.Boolean(string='Show Recommend Price', store=True)
+
+
+
+
+

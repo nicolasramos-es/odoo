@@ -33,8 +33,8 @@
 
 {
     "name": "Recommend Price in product",
-    "summary": "Recommend Price in product",
-    "version": "10.0.2.0",
+    "summary": "Recommended price for products",
+    "version": "10.0.3.0",
     "category": "Stock",
     "website": "http://www.difusionvisual.com",
     "author": "Difusión Visual, IngenieríaCloud",
@@ -42,6 +42,7 @@
     "application": False,
     "installable": True,
     "depends": [
+        "report",
         "base",
         "product",
         "account",
@@ -49,5 +50,8 @@
     ],
     "data": [
         "views/recommend_view.xml",
+        "views/report_saleorder_recommend.xml",
+        "views/report_invoice_recommend.xml",
     ],
+    'images':  ['static/description/Banner.png'],
 }

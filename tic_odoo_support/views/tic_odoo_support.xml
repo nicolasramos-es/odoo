@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Odoo Installations -->
+    <record id="partner_view_odoo_installation_bool" model="ir.ui.view">
+        <field name="name">res.partner.odoo.installation.bool</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='lang']" position="after">
+               <field name="odooinstallation"/>
+            </xpath>
+        </field>
+    </record>
+    <!-- Form View -->
+    <record id="partner_view_odoo_installations" model="ir.ui.view">
+        <field name="name">res.partner.odoo.installations</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='sales_purchases']" position="before">
+                <page name="odooinstances" string="Odoo Instances" attrs="{'invisible': [('odooinstallation','=', False)]}">
+                    <field name="odooinstance_ids" nolabel="1">
+                    <tree>
+                        <field name="instance_name"/>
+                        <field name="instance_version" widget="selection"/>
+                        <field name="instance_type" widget="selection"/>
+                        <field name="instance_os_host" widget="selection"/>
+                        <field name="instance_virtualized"/>
+                        <field name="instance_os_guest" widget="selection" attrs="{'invisible': [('instance_virtualized','=', False)]}"/>
+                        <field name="instance_rma_sr" />
+                        <!--attrs="{'invisible': [('instance_type','=',local)]}"/>-->
+                        <field name="instance_nginxpowered"/>
+                        <field name="instance_dn"/>
+                        <field name="instance_ipfailover"/>
+                        <field name="instance_connport"/>
+                        <field name="instance_ssl"/>
+                        <field name="instance_managementport"/>
+                        <field name="instance_managementprotocol" widget="selection"/>
+                        <field name="instance_managementuser"/>
+                        <field name="instance_notes"/>
+                    </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <!-- Tree View -->
+    <record id="tic_odoo_instance_view_tree" model="ir.ui.view">
+        <field name="name">tic.odoo.instance.view.tree</field>
+        <field name="model">tic.odoo.instance.support</field>
+        <field name="arch" type="xml">
+            <tree string="Odoo Instances">
+                <field name="instance_name"/>
+                <field name="instance_version" widget="selection"/>
+                <field name="instance_type" widget="selection"/>
+                <field name="instance_os_host" widget="selection"/>
+                <field name="instance_virtualized"/>
+                <field name="instance_os_guest" widget="selection" attrs="{'invisible': [('instance_virtualized','=', False)]}"/>
+                <field name="instance_rma_sr"/>
+                <!--attrs="{'invisible': [('instance_type','=',local)]}"/>-->
+                <field name="instance_nginxpowered"/>
+                <field name="instance_dn"/>
+                <field name="instance_ipfailover"/>
+                <field name="instance_connport"/>
+                <field name="instance_ssl"/>
+                <field name="instance_managementport"/>
+                <field name="instance_managementprotocol" widget="selection"/>
+                <field name="instance_managementuser"/>
+                <field name="instance_notes"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Search View -->
+    <record id="tic_odoo_instance_view_form" model="ir.ui.view">
+        <field name="name">tic.odoo.instance.view.form</field>
+        <field name="model">tic.odoo.instance.support</field>
+        <field name="arch" type="xml">
+            <form string="Odoo Instances">
+                <sheet>
+                    <group>
+                        <div class="oe_title oe_left">
+                            <div class="oe_edit_only">
+                                <label for="name"/>
+                            </div>
+                            <h1>
+                                <field name="instance_name" default_focus="1" placeholder="Name"/>
+                            </h1>
+                        </div>
+                    </group>
+                    <group colspan="4" col="4">
+                        <field name="instance_version" widget="selection"/>
+                        <field name="instance_type" widget="selection"/>
+                        <field name="instance_os_host" widget="selection"/>
+                        <field name="instance_virtualized"/>
+                        <field name="instance_os_guest" widget="selection" attrs="{'invisible': [('instance_virtualized','=', False)]}"/>
+                        <field name="instance_rma_sr"/>
+                        <!--attrs="{'invisible': [('instance_type','=',local)]}"/>-->
+                        <field name="instance_nginxpowered"/>
+                        <field name="instance_dn"/>
+                        <field name="instance_ipfailover"/>
+                        <field name="instance_connport"/>
+                        <field name="instance_ssl"/>
+                        <field name="instance_managementport"/>
+                        <field name="instance_managementprotocol" widget="selection"/>
+                        <field name="instance_managementuser"/>
+                    </group>
+                    <group>
+                        <field name="instance_notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

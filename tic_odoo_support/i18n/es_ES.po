@@ -1,0 +1,266 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tic_odoo_support
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-05 12:56+0100\n"
+"PO-Revision-Date: 2017-05-05 13:05+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.1\n"
+"Last-Translator: \n"
+"Language: es_ES\n"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_os_guest:0
+#: selection:tic.odoo.instance.support,instance_os_host:0
+msgid "CEntOS"
+msgstr "CEntOS"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_type:0
+msgid "CPD"
+msgstr "CPD"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_connport
+msgid "Connection Port"
+msgstr "Puerto de Conexión"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_display_name
+msgid "Display Name"
+msgstr "Nombre a Mostrar"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_dn
+msgid "Domain Name of the installed Odoo"
+msgstr "Nombre de Dominio de la Instancia Odoo"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_res_partner_odooinstallation
+msgid "Has an Odoo Installation?"
+msgstr "¿Posee una instalación de Odoo?"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_id
+msgid "ID"
+msgstr "ID"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_ipfailover
+msgid "IP address failover"
+msgstr "Dirección IP de Respaldo"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_virtualized
+msgid "Is virtualized?"
+msgstr "¿Es virtual?"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support___last_update
+msgid "Last Modified on"
+msgstr "Última Modificación en"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_write_uid
+msgid "Last Updated by"
+msgstr "Ultima Actualización por"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_write_date
+msgid "Last Updated on"
+msgstr "Última Actualización en"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_type:0
+msgid "Local Dedicated Server"
+msgstr "Servidor Local Dedicado"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_managementport
+msgid "Management Port"
+msgstr "Puerto de Administración"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_managementprotocol
+msgid "Management Protocol"
+msgstr "Protocolo de Administración"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_os_guest:0
+#: selection:tic.odoo.instance.support,instance_os_host:0
+msgid "Microsoft Windows Server"
+msgstr "Microsoft Windows Server"
+
+#. module: tic_odoo_support
+#: model:ir.ui.view,arch_db:tic_odoo_support.tic_odoo_instance_view_form
+msgid "Name"
+msgstr "Nombre"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_name
+msgid "Name of the Instance"
+msgstr "Nombre de la Instancia"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_notes
+msgid "Notes"
+msgstr "Notas"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_version:0
+#: selection:tic.odoo.instance.support,state:0
+msgid "Odoo 10"
+msgstr "Odoo 10"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_version:0
+#: selection:tic.odoo.instance.support,state:0
+msgid "Odoo 8"
+msgstr "Odoo 8"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_version:0
+#: selection:tic.odoo.instance.support,state:0
+msgid "Odoo 9"
+msgstr "Odoo 9"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_res_partner_odooinstance_ids
+msgid "Odoo Installations"
+msgstr "Instalaciones de Odoo"
+
+#. module: tic_odoo_support
+#: model:ir.ui.view,arch_db:tic_odoo_support.partner_view_odoo_installations
+#: model:ir.ui.view,arch_db:tic_odoo_support.tic_odoo_instance_view_form
+#: model:ir.ui.view,arch_db:tic_odoo_support.tic_odoo_instance_view_tree
+msgid "Odoo Instances"
+msgstr "Instancias de Odoo"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_os_guest
+msgid "Operating System of Guest"
+msgstr "Sistema Operativo Invitado"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_os_host
+msgid "Operating System of Host"
+msgstr "Sistema Operativo Anfitrión"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_os_guest:0
+#: selection:tic.odoo.instance.support,instance_os_host:0
+msgid "Other Debian based Linux"
+msgstr "Otros Linux basados en Debian"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_managementprotocol:0
+msgid "Other Protocol"
+msgstr "Otro Protocolo"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_os_guest:0
+#: selection:tic.odoo.instance.support,instance_os_host:0
+msgid "Other RedHat based Linux"
+msgstr "Otros Linux basados en RedHat"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_os_guest:0
+#: selection:tic.odoo.instance.support,instance_os_host:0
+msgid "Other Slackware based Linux"
+msgstr "Otros Linux basados en Slackware"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_os_guest:0
+#: selection:tic.odoo.instance.support,instance_os_host:0
+msgid "Others"
+msgstr "Otros"
+
+#. module: tic_odoo_support
+#: model:ir.model,name:tic_odoo_support.model_res_partner
+msgid "Partner"
+msgstr "Socio"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_rma_sr
+msgid "RMA_SR"
+msgstr "RMA_SR"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_managementprotocol:0
+msgid "Remote Login"
+msgstr "Acceso Remoto"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_ssl
+msgid "SSL Enabled?"
+msgstr "¿SSL Aplicado?"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_managementprotocol:0
+msgid "Secure Shell"
+msgstr "Línea de Comandos Segura"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_managementprotocol:0
+msgid "Telecommunication Network"
+msgstr "Red de Telecomunicaciones"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_type
+msgid "Type of server"
+msgstr "Tipo de Servidor"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_os_guest:0
+#: selection:tic.odoo.instance.support,instance_os_host:0
+msgid "Ubuntu Server"
+msgstr "Servidor Ubuntu"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_managementuser
+msgid "User Management"
+msgstr "Usuario de Administración"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_nginxpowered
+msgid "Uses NGINX?"
+msgstr "¿Utiliza NGINX?"
+
+#. module: tic_odoo_support
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_instance_version
+#: model:ir.model.fields,field_description:tic_odoo_support.field_tic_odoo_instance_support_state
+msgid "Version of Odoo"
+msgstr "Versión de Odoo"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_type:0
+msgid "Virtual Private Cloud"
+msgstr "Nube Privada Virtual"
+
+#. module: tic_odoo_support
+#: selection:tic.odoo.instance.support,instance_type:0
+msgid "Virtual Private Server"
+msgstr "Servidor Privado Virtual"
+
+#. module: tic_odoo_support
+#: model:ir.model,name:tic_odoo_support.model_tic_odoo_instance_support
+msgid "tic.odoo.instance.support"
+msgstr "tic.odoo.instance.support"

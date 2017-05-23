@@ -50,7 +50,7 @@
         'base',
     ],
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/tic_remote_support.xml',
     ],
 

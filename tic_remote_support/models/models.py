@@ -41,9 +41,11 @@ class TicRemoteSupportService(models.Model):
     name = fields.Char(string="Name", required=True)
     remote_type = fields.Selection(string="Remote Type", selection=[
         ('teamviewer', 'TeamViewer'),
+        ('anydesk', 'AnyDesk'),
         ('weezo', 'Weezo'),
         ('ammyy', 'AMMYY'),
         ('vnc', 'VNC'),
+        ('tightvnc', 'TightVNC'),
         ('chrome', 'Chrome'),
         ('remotedesktop', 'Remote Desktop'),
         ('ssh', 'SSH'),

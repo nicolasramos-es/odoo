@@ -32,7 +32,7 @@
 #
 ###############################################
 {
-    'name': "Tic Odoo Installations of Difusión Visual",
+    'name': "Tic Odoo Installations",
 
     'summary': """
         This module adds new partner tab to make a tracking of any Odoo instance implemented for each customer.""",

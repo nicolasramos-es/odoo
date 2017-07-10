@@ -40,12 +40,12 @@
 
     # 'description': put the module description in README.rst
 
-    'author': 'Difusión Visual, IngenieríaCloud',
+    'author': 'Difusión Visual',
     'website': "http://difusionvisual.com",
     'category': 'Extra Rights',
-    'version': '10.0.2.0.0',
+    'version': '10.0.3.0.0',
     'license': 'AGPL-3',
-    'images': ['static/description/screen_01.png'],
+    'images': ['static/description/Banner.png'],
     'depends': [
         'base',
     ],

@@ -35,7 +35,6 @@ from odoo import api, fields, models
 
 
 class CrmLeadToProjectTaskWizard(models.TransientModel):
-
     _name = "crm.lead2projecttask.wizard"
     _inherit = 'crm.partner.binding'
 
@@ -50,7 +49,7 @@ class CrmLeadToProjectTaskWizard(models.TransientModel):
     lead_id = fields.Many2one('crm.lead', string='Lead',
                               domain=[('type', '=', 'lead')])
     project_id = fields.Many2one('project.project', string='Project', domain=[('use_tasks', '=', True)])
-    asigned_id = fields.Many2one('res.users', string="Asignado a",
+    asigned_id = fields.Many2one('res.users', string="Assigned to",
                                  required=False)
     date_deadline = fields.Date(string="Deadline", required=False)
 

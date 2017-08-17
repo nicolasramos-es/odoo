@@ -37,7 +37,10 @@
     "version": "10.0.3.0",
     "category": "Stock",
     "website": "http://www.difusionvisual.com",
-    "author": "Difusión Visual, IngenieríaCloud",
+    "author": "Difusión Visual",
+    'contributors': [
+        'Nicolás Ramos <contacto@difusionvisual.com> ',
+    ],
     "license": "AGPL-3",
     "application": False,
     "installable": True,

@@ -39,10 +39,9 @@
 
     # 'description': put the module description in README.rst
 
-    'author': 'Difusión Visual, IngenieríaCloud',
-     'contributors': ['Nicolás Ramos <contacto@difusion.visual.com>',
-                     'Antonio Cánovas <antonio.canovas@ingenieriacloud.com>',
-                     'Carlos León <carlos.leon@difusionvisual.com>'],
+    'author': 'Difusión Visual',
+    'contributors': ['Nicolás Ramos <contacto@difusionvisual.com>',
+    ],
     'website': "http://difusionvisual.com",
     'category': 'Extra Rights',
     'version': '10.0.2.0.0',

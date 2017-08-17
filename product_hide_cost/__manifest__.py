@@ -40,6 +40,9 @@
     # 'description': put the module description in README.rst
 
     'author': 'Difusión Visual',
+    'contributors': [
+        'Nicolás Ramos <contacto@difusion.visual.com> ',
+    ],
     'website': "http://difusionvisual.com",
     'category': 'Extra Rights',
     'version': '10.0.2.0.0',

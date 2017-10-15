@@ -32,4 +32,4 @@
 #
 ###############################################
 
-import crm_lead2projecttask_wizard
+from . import crm_lead2projecttask_wizard

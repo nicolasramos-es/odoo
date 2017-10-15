@@ -32,4 +32,4 @@
 #
 ###############################################
 
-import wizard, models
+from . import wizard, models

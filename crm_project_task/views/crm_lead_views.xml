@@ -114,10 +114,10 @@
         <field name="model">project.project</field>
         <field name="inherit_id" ref="project.view_project_kanban"/>
         <field name="arch" type="xml">
-            <field name="doc_count" position="after">
+            <field name="task_count" position="after">
                 <field name="leadcount"/>
             </field>
-            <xpath expr="//div[contains(@class, 'o_project_kanban_box')]/div[last()]" position="before">
+            <xpath expr="//a[contains(@class, 'o_project_kanban_box')]/div[last()]" position="before">
                 <div t-if="record.leadcount.raw_value" class="o_project_kanban_box">
                     <a name="%(action_open_view_project)d" type="action">
                         <span class="o_value">

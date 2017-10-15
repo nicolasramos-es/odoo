@@ -48,7 +48,7 @@ class CrmLeadToProjectTaskWizard(models.TransientModel):
 
     lead_id = fields.Many2one('crm.lead', string='Lead',
                               domain=[('type', '=', 'lead')])
-    project_id = fields.Many2one('project.project', string='Project', domain=[('use_tasks', '=', True)])
+    project_id = fields.Many2one('project.project', string='Project')
     asigned_id = fields.Many2one('res.users', string="Assigned to",
                                  required=False)
     date_deadline = fields.Date(string="Deadline", required=False)

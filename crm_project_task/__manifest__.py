@@ -33,14 +33,13 @@
 ###############################################
 {
     'name': 'Lead to Task',
-    'version': '1.1.0',
-    'summary': 'Create Tasks from Leads',
-    'author': 'Difusión Visual, IngenieríaCloud',
-    'contributors': [
-        'Nicolás Ramos <contacto@difusionvisual.com> ',
-    ],
+    'version': '11.0.1.0.0',
+    'summary': """Create Tasks from Leads and add count task in project""",
+    'description': """Create Tasks from Leads and add count task in project""",
+    'author': 'Difusión Visual Interactivo',
+    'company': 'Difusión Visual Interactivo',
     'website': 'http://www.difusionvisual.com',
-    'category': 'Sales Management',
+    'category': 'Sales',
     'license': 'AGPL-3',
     'depends': [
         'crm',
@@ -52,7 +51,10 @@
         'wizard/crm_lead2projecttask_wizard_view.xml',
         'views/crm_lead_views.xml',
     ],
+    'images': ['static/description/Banner.png'],
+    'demo': [],
     'application': False,
     'installable': True,
-    'images':  ['static/description/Banner.png'],
+    'auto_install': False,
+
 }

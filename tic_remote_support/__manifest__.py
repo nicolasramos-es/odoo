@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 ##############################################
 #
-# Difusión Visual
-# Copyright (C) Difusión Visual
+# Difusión Visual Interactivo S.L.
+# Copyright (C) Difusión Visual Interactivo S.L.
 # all rights reserved
 # http://difusionvisual.com
 # contacto@difusionvisual.com
@@ -40,7 +40,7 @@
 
     # 'description': put the module description in README.rst
 
-    'author': 'Difusión Visual',
+    'author': 'Difusión Visual Interactivo S.L.',
     'website': "http://difusionvisual.com",
     'category': 'Extra Rights',
     'version': '11.0.4.0.0',

@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 ##############################################
 #
-# Difusión Visual
-# Copyright (C) Difusión Visual
+# Difusión Visual Interactivo S.L.
+# Copyright (C) Difusión Visual Interactivo S.L.
 # all rights reserved
 # http://difusionvisual.com
 # contacto@difusionvisual.com
@@ -36,8 +36,8 @@
     'version': '11.0.1.0.0',
     'summary': """Create Tasks from Leads and add count task in project""",
     'description': """Create Tasks from Leads and add count task in project""",
-    'author': 'Difusión Visual Interactivo',
-    'company': 'Difusión Visual Interactivo',
+    'author': 'Difusión Visual Interactivo S.L.',
+    'company': 'Difusión Visual Interactivo S.L.',
     'website': 'http://www.difusionvisual.com',
     'category': 'Sales',
     'license': 'AGPL-3',

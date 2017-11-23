@@ -57,7 +57,7 @@ class TicRemoteSupportService(models.Model):
         ('backup', 'Backup'),
         ('print', 'Print'),
         ('camera', 'Camera'),
-        ('swich', 'Swich'),
+        ('swich', 'Switch'),
         ('router', 'Router'),
         ('other', 'Other')], required=False, )
     remote_id = fields.Char(string="ID", required=False, )
@@ -67,11 +67,21 @@ class TicRemoteSupportService(models.Model):
     remote_username = fields.Char(string="Username", required=False, )
     remote_password = fields.Char(string="Password", required=False, )
     remote_notes = fields.Text(string="Notes", required=False, )
+    partner_id = fields.Many2one(
+        'res.partner',
+        string='Partner',
+        ondelete='cascade',
+    )
+    sequence = fields.Integer(
+        string='Sequence',
+        required=True,
+        default=0,
+    )
 
 
 class TicRemoteSupport(models.Model):
     _inherit = 'res.partner'
 
     supportbool = fields.Boolean(string="Remote Support?")
-    remotes_ids = fields.Many2many(comodel_name="tic.remote.support.service",
-                                   string="Remote Support", store=True)
+    remotes_ids = fields.One2many(comodel_name="tic.remote.support.service", inverse_name="partner_id",
+                                  string="Remote Support", store=True)

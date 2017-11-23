@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='category_id']" position="after">
-               <field name="supportbool"/>
+                <field name="supportbool"/>
             </xpath>
         </field>
     </record>
@@ -19,17 +19,18 @@
             <xpath expr="//page[@name='internal_notes']" position="after">
                 <page name="remotesupport" string="Remote Support" attrs="{'invisible': [('supportbool','=', False)]}">
                     <field name="remotes_ids" nolabel="1">
-                    <tree>
-                        <field name="name"/>
-                        <field name="remote_type" widget="selection"/>
-                        <field name="pc_type" widget="selection"/>
-                        <field name="remote_id"/>
-                        <field name="remote_ip"/>
-                        <field name="remote_port"/>
-                        <field name="remote_username"/>
-                        <field name="remote_password"/>
-                        <field name="remote_notes"/>
-                    </tree>
+                        <tree>
+                            <field name="sequence" widget="handle"/>
+                            <field name="name"/>
+                            <field name="remote_type" widget="selection"/>
+                            <field name="pc_type" widget="selection"/>
+                            <field name="remote_id"/>
+                            <field name="remote_ip"/>
+                            <field name="remote_port"/>
+                            <field name="remote_username"/>
+                            <field name="remote_password"/>
+                            <field name="remote_notes"/>
+                        </tree>
                     </field>
                 </page>
             </xpath>

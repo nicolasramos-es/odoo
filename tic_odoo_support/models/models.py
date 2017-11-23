@@ -46,9 +46,11 @@ class TicOdooInstanceSupport(models.Model):
         string="Version of Odoo",
         selection=[('odoo8', 'Odoo 8'),
                    ('odoo9', 'Odoo 9'),
-                   ('odoo10', 'Odoo 10')],
+                   ('odoo10', 'Odoo 10'),
+                   ('odoo11', 'Odoo 11')
+                   ],
         required=True,
-        default='odoo10')
+        default='odoo11')
     instance_type = fields.Selection(
         string="Type of server",
         selection=[

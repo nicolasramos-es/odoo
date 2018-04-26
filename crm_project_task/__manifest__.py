@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 ##############################################
 #
-# Difusión Visual
-# Copyright (C) Difusión Visual
+# Difusión Visual Interactivo S.L.
+# Copyright (C) Difusión Visual Interactivo S.L.
 # all rights reserved
 # http://difusionvisual.com
 # contacto@difusionvisual.com
@@ -35,9 +35,10 @@
     'name': 'Lead to Task',
     'version': '1.1.0',
     'summary': 'Create Tasks from Leads',
-    'author': 'Difusión Visual, IngenieríaCloud',
+    'author': 'Difusión Visual Interactivo S.L.',
     'contributors': [
-        'Nicolás Ramos <contacto@difusionvisual.com> ',
+        "Nicolás Ramos <contacto@difusionvisual.com>",
+        "Aythami Pérez <contacto@difusionvisual.com>",
     ],
     'website': 'http://www.difusionvisual.com',
     'category': 'Sales Management',

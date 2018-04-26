@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 ##############################################
 #
-# Difusión Visual
-# Copyright (C) Difusión Visual
+# Difusión Visual Interactivo S.L.
+# Copyright (C) Difusión Visual Interactivo S.L.
 # all rights reserved
 # http://difusionvisual.com
 # contacto@difusionvisual.com
@@ -39,8 +39,10 @@
 
     # 'description': put the module description in README.rst
 
-    'author': 'Difusión Visual',
-    'contributors': ['Nicolás Ramos <contacto@difusionvisual.com>',
+    'author': 'Difusión Visual Interactivo S.L.',
+    'contributors': [
+        "Nicolás Ramos <contacto@difusionvisual.com>",
+        "Aythami Pérez <contacto@difusionvisual.com>",
     ],
     'website': "http://difusionvisual.com",
     'category': 'Extra Rights',

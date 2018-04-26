@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################
 #
-# Difusión Visual
-# Copyright (C) Difusión Visual
+# Difusión Visual Interactivo S.L.
+# Copyright (C) Difusión Visual Interactivo S.L.
 # all rights reserved
 # http://difusionvisual.com
 # contacto@difusionvisual.com

@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 ##############################################
 #
-# Difusión Visual
-# Copyright (C) Difusión Visual
+# Difusión Visual Interactivo S.L.
+# Copyright (C) Difusión Visual Interactivo S.L.
 # all rights reserved
 # http://difusionvisual.com
 # contacto@difusionvisual.com
@@ -33,7 +33,23 @@
 ###############################################
 
 from odoo import fields, models, api
+import odoo.addons.decimal_precision as dp
 
 
 class StockLotInventory(models.Model):
     _inherit = 'stock.production.lot'
+
+
+    stock_avail = fields.Float(
+        compute='_get_lot_qty',
+        type='float',
+        digits_compute=dp.get_precision('Product Unit of Measure'),
+        string='On hand')
+
+    @api.multi
+    @api.depends('quant_ids')
+    def _get_lot_qty(self):
+        """Compute the quantities for production lots."""
+        for lot in self:
+            lot.stock_avail = lot.with_context(
+                lot_id=lot.id).product_id.qty_available

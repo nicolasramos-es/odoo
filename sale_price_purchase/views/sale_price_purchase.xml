@@ -4,7 +4,7 @@
     <record model="ir.ui.view" id="sale_price_purchase_order_line_form">
         <field name="name">sale_price_purchase.order.line.form</field>
         <field name="model">purchase.order.line</field>
-        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="inherit_id" ref="purchase.purchase_order_line_form2"/>
         <field name="arch" type="xml">
             <field name="price_unit" position="after">
                 <field name="sale_price"/>
@@ -29,7 +29,7 @@
          <field name="arch" type="xml">
               <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="after">
                   <field name="sale_price"/>
-                 </xpath>
+              </xpath>
          </field>
      </record>
 </odoo>

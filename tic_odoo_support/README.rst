@@ -48,7 +48,7 @@ Maintainer
 ----------
 
 .. image:: https://difusionvisual.com/images/logo_web.png
-   :alt: Difusión Visual
+   :alt: Difusión Visual Interactivo S.L.
    :target: http://www.difusionvisual.com
 
-This module is maintained by Difusión Visual.
+This module is maintained by Difusión Visual Interactivo S.L..

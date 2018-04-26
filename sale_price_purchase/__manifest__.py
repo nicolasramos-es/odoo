@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################
 #
-# Difusión Visual
-# Copyright (C) Difusión Visual
+# Difusión Visual Interactivo S.L.
+# Copyright (C) Difusión Visual Interactivo S.L.
 # all rights reserved
 # http://difusionvisual.com
 # contacto@difusionvisual.com
@@ -37,7 +37,11 @@
     "version": "10.0.2.0",
     "category": "Purchase",
     "website": "http://www.difusionvisual.com",
-    "author": "Difusión Visual, IngenieríaCloud",
+    "author": "Difusión Visual Interactivo S.L.",
+    'contributors': [
+        "Nicolás Ramos <contacto@difusionvisual.com>",
+        "Aythami Pérez <contacto@difusionvisual.com>",
+    ],
     "license": "AGPL-3",
     "application": False,
     "installable": True,

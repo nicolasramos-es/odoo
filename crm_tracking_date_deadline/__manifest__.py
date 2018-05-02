@@ -47,6 +47,7 @@
     "installable": True,
     'depends': ['crm', 'hr'],
     'data': ['views/crm_tracking_date_deadline.xml'],
+    'images': ['static/img/Banner.png'],
 }
 
 

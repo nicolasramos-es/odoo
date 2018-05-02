@@ -47,6 +47,7 @@
     "installable": True,
     'depends': ['project'],
     'data': ['views/project_task_supervisor.xml'],
+    'images': ['static/img/Banner.png'],
 }
 
 

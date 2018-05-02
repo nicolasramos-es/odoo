@@ -58,6 +58,5 @@
         'views/product_hide_cost.xml',
         'security/security.xml',
     ],
-    'images':  ['static/description/Banner.png'],
-
+    'images': ['static/img/Banner.png'],
 }

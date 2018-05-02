@@ -51,7 +51,7 @@
     'depends': [
         'base',
     ],
-    'images':  ['static/description/Banner.fw.png'],
+    'images':  ['static/img/Banner.png'],
     'data': [
         'views/view.xml',
     ],

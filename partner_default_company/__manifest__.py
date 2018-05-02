@@ -47,6 +47,7 @@
     "installable": True,
     'depends': ['crm'],
     'data': ['views/partner_default_company.xml'],
+    'images': ['static/img/Banner.png'],
 }
 
 

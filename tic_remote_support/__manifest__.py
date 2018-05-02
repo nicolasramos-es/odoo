@@ -49,7 +49,7 @@
     'category': 'Extra Rights',
     'version': '10.0.4.0.0',
     'license': 'AGPL-3',
-    'images': ['static/description/Banner.png'],
+    'images': ['static/img/Banner.png'],
     'depends': [
         'base',
     ],

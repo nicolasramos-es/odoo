@@ -57,5 +57,5 @@
         "views/report_saleorder_recommend.xml",
         "views/report_invoice_recommend.xml",
     ],
-    'images':  ['static/description/Banner.png'],
+    'images': ['static/img/Banner.png'],
 }

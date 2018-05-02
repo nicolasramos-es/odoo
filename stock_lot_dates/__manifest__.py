@@ -59,5 +59,5 @@
     'data': [
         'views/stock_lot_dates.xml',
     ],
-
+    'images': ['static/img/Banner.png'],
 }

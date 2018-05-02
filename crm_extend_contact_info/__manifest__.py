@@ -47,6 +47,7 @@
     "installable": True,
     'depends': ['crm'],
     'data': ['views/crm_extend_contact_info.xml'],
+    'images': ['static/img/Banner.png'],
 }
 
 

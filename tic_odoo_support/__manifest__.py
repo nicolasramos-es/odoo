@@ -55,5 +55,5 @@
         'views/tic_odoo_support.xml',
         'security/ir.model.access.csv',
     ],
-
+    'images': ['static/img/Banner.png'],
 }

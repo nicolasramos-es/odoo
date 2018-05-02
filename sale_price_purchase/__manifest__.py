@@ -52,4 +52,5 @@
     "data": [
         "views/sale_price_purchase.xml",
     ],
+    'images': ['static/img/Banner.png'],
 }

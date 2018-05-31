@@ -48,4 +48,5 @@
     'data': ['views/crm_assign.xml'],
     'installable': True,
     'auto_install': False,
+    'images': ['static/description/banner.jpg'],
 }

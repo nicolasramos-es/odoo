@@ -40,8 +40,8 @@
 
     # 'description': put the module description in README.rst
 
-    'author': 'Difusión Visual Interactivo',
-    'website': "http://difusionvisual.com",
+    'author': 'DV Interactivo',
+    'website': "http://dvinteractivo.com",
     'category': 'Extra Rights',
     'version': '11.0.4.0.0',
     'license': 'AGPL-3',

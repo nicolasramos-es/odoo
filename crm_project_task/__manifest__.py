@@ -36,9 +36,9 @@
     'version': '11.0.1.0.0',
     'summary': """Create Tasks from Leads and add count task in project""",
     'description': """Create Tasks from Leads and add count task in project""",
-    'author': 'Difusión Visual Interactivo S.L.',
-    'company': 'Difusión Visual Interactivo S.L.',
-    'website': 'http://www.difusionvisual.com',
+    'author': 'DV Interactivo',
+    'company': 'DV Interactivo',
+    'website': 'http://www.dvinteractivo.com',
     'category': 'Sales',
     'license': 'AGPL-3',
     'depends': [

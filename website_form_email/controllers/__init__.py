@@ -31,26 +31,5 @@
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 ###############################################
-{
-    'name': "Tic Remote Support",
 
-    'summary': """
-        This module adds new partner tab to add remote access data
-        to your clients such as TeamViewer, VNC, ...""",
-
-    # 'description': put the module description in README.rst
-
-    'author': 'Difusión Visual Interactivo',
-    'website': "http://difusionvisual.com",
-    'category': 'Extra Rights',
-    'version': '11.0.4.0.0',
-    'license': 'AGPL-3',
-    'images': ['static/description/banner.jpg'],
-    'depends': [
-        'base',
-    ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/tic_remote_support.xml',
-    ],
-}
+from . import main

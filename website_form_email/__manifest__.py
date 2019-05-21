@@ -31,26 +31,20 @@
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 ###############################################
+
 {
-    'name': "Tic Remote Support",
-
-    'summary': """
-        This module adds new partner tab to add remote access data
-        to your clients such as TeamViewer, VNC, ...""",
-
-    # 'description': put the module description in README.rst
-
-    'author': 'Difusión Visual Interactivo',
-    'website': "http://difusionvisual.com",
-    'category': 'Extra Rights',
-    'version': '11.0.4.0.0',
+    'name': 'Website Contact Form Notification',
+    'version': '0.1',
+    'summary': 'Send an email when the Web contact form is sent',
+    'description': 'Send an email when the Web contact form is sent',
+    'category': 'Website',
+    'author': 'DV Interactivo',
+    'company': 'DV Interactivo',
+    'website': 'www.dvinteractivo.com',
     'license': 'AGPL-3',
+    'depends': ['website_crm'],
+    'data': ['data/website_form_email_data.xml'],
+    'installable': True,
+    'auto_install': False,
     'images': ['static/description/banner.jpg'],
-    'depends': [
-        'base',
-    ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/tic_remote_support.xml',
-    ],
 }

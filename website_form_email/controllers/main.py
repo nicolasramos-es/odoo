@@ -31,26 +31,20 @@
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 ###############################################
-{
-    'name': "Tic Remote Support",
 
-    'summary': """
-        This module adds new partner tab to add remote access data
-        to your clients such as TeamViewer, VNC, ...""",
+import odoo
 
-    # 'description': put the module description in README.rst
 
-    'author': 'Difusión Visual Interactivo',
-    'website': "http://difusionvisual.com",
-    'category': 'Extra Rights',
-    'version': '11.0.4.0.0',
-    'license': 'AGPL-3',
-    'images': ['static/description/banner.jpg'],
-    'depends': [
-        'base',
-    ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/tic_remote_support.xml',
-    ],
-}
+class WebsiteForm(odoo.addons.website_form.controllers.main.WebsiteForm):
+
+    def insert_record(self, request, model, values, custom, meta=None):
+        record_id = super(WebsiteForm, self).insert_record(
+            request, model, values, custom, meta)
+
+        if model.model == 'crm.lead':
+            template = request.env.ref(
+                'website_form_email.website_form_email_template', False)
+            if template:
+                mail_id = template.sudo().send_mail(record_id, force_send=True)
+
+        return record_id

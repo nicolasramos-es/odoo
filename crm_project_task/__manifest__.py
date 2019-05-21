@@ -51,7 +51,7 @@
         'wizard/crm_lead2projecttask_wizard_view.xml',
         'views/crm_lead_views.xml',
     ],
-    'images': ['static/description/Banner.png'],
+    'images': ['static/description/banner.jpg'],
     'demo': [],
     'application': False,
     'installable': True,

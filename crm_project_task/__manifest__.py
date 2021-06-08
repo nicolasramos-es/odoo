@@ -33,7 +33,7 @@
 ###############################################
 {
     'name': 'Lead to Task',
-    'version': '11.0.1.0.0',
+    'version': '11.0.1.0.1',
     'summary': """Create Tasks from Leads and add count task in project""",
     'description': """Create Tasks from Leads and add count task in project""",
     'author': 'DV Interactivo',
@@ -56,5 +56,7 @@
     'application': False,
     'installable': True,
     'auto_install': False,
+    'price': 15.00,
+    'currency': 'EUR',
 
 }

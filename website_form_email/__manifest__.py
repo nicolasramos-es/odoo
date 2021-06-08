@@ -33,8 +33,8 @@
 ###############################################
 
 {
-    'name': 'Website Contact Form Notification',
-    'version': '0.1',
+    'name': 'Website Contact Form Email Notification',
+    'version': '0.2',
     'summary': 'Send an email when the Web contact form is sent',
     'description': 'Send an email when the Web contact form is sent',
     'category': 'Website',
@@ -47,4 +47,6 @@
     'installable': True,
     'auto_install': False,
     'images': ['static/description/banner.jpg'],
+    'price': 15.00,
+    'currency': 'EUR',
 }

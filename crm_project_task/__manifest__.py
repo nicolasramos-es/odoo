@@ -33,7 +33,7 @@
 ###############################################
 {
     'name': 'Lead to Task',
-    'version': '1.1.0',
+    'version': '1.2.0',
     'summary': 'Create Tasks from Leads',
     'author': 'Difusión Visual Interactivo S.L.',
     'contributors': [
@@ -56,4 +56,6 @@
     'application': False,
     'installable': True,
     'images':  ['static/img/Banner.png'],
+    'price': 49.99,
+    'currency': 'EUR',
 }

@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 ##############################################
 #
-# Difusión Visual Interactivo S.L.
-# Copyright (C) Difusión Visual Interactivo S.L.
+# Ibérica Sistemas
+# Copyright (C) Ibérica Sistemas
 # all rights reserved
-# http://difusionvisual.com
-# contacto@difusionvisual.com
+# http://ibericasistemas.com
+# contacto@ibericasistemas.com
 #
 # WARNING: This program as such is intended to be used by professional
 # programmers who take the whole responsability of assessing all potential
@@ -34,13 +34,13 @@
 
 {
     'name': 'Website Contact Form Email Notification',
-    'version': '0.2',
+    'version': '12.0.1.0.2',
     'summary': 'Send an email when the Web contact form is sent',
     'description': 'Send an email when the Web contact form is sent',
     'category': 'Website',
-    'author': 'DV Interactivo',
-    'company': 'DV Interactivo',
-    'website': 'www.dvinteractivo.com',
+    'author': 'Ibérica Sistemas',
+    'company': 'Ibérica Sistemas',
+    'website': 'www.ibericasistemas.com',
     'license': 'AGPL-3',
     'depends': ['website_crm'],
     'data': ['data/website_form_email_data.xml'],

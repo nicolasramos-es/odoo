@@ -1,0 +1,12 @@
+<odoo>
+
+        <record id="show_cost_price" model="res.groups">
+            <field name="name">Show cost price</field>
+        </record>
+
+        <record id="show_sale_price" model="res.groups">
+            <field name="name">Show sale price</field>
+        </record>
+
+
+</odoo>

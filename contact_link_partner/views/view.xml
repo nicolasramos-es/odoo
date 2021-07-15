@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	  <!-- Inherit Form View to Modify it -->
-        <record id="partner_view_contact_link" model="ir.ui.view">
-            <field name="name">res.partner.link.form</field>
-            <field name="model">res.partner</field>
-            <field name="inherit_id" ref="base.view_partner_form"/>
-            <field name="arch" type="xml">
-                <xpath expr="//div[@class='oe_kanban_details']" position="inside">
-                    <button name="go_to_partner" type="object" string="Go to Partner"
-                            class="btn btn-primary oe_kanban_action oe_kanban_action_button">Go</button>
-                </xpath>
-            </field>
-        </record>
+    <!-- Inherit Form View to Modify it -->
+    <record id="partner_view_contact_link" model="ir.ui.view">
+        <field name="name">res.partner.link.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_kanban_details']" position="inside">
+                <button name="go_to_partner" type="object" string="Go to Partner"
+                        class="btn btn-primary oe_kanban_action oe_kanban_action_button">Go</button>
+            </xpath>
+        </field>
+    </record>
 </odoo>

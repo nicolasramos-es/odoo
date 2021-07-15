@@ -49,11 +49,9 @@
     'depends': [
         'base',
     ],
-    'images':  ['static/description/banner.gif'],
+    'images': ['static/description/banner.gif'],
     'data': [
         'views/view.xml',
     ],
-    'price': 5.00,
-    'currency': 'EUR',
 
 }

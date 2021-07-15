@@ -71,7 +71,7 @@
             <xpath expr="//form/sheet/notebook/page/field/tree/field[@name='price_unit']" position="after">
                 <field name="recommend_price"/>
             </xpath>
-           
+
         </field>
     </record>
 </odoo>

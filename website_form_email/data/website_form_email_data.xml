@@ -14,19 +14,19 @@
             </field>
             <field name="body_html">
                 <![CDATA[
-<p>Thank you for contacting us.</p>
-<p>Thank you for contacting us. We'll contact you shortly to resolve your doubts..</p>
-<p>Details of your query:</p>
-<ul>
-<li>Name: ${object.contact_name}</li>
-<li>Phone Number: ${object.phone}</li>
-<li>Email ${object.email_from}</li>
-<li>Company: ${object.partner_name}</li>
-<li>Subject: ${object.name}</li>
-<li>Content: ${object.description}</li>
-</ul>
-<p>King Regards,</p>
-        ]]>
+                <p>Thank you for contacting us.</p>
+                <p>Thank you for contacting us. We'll contact you shortly to resolve your doubts..</p>
+                <p>Details of your query:</p>
+                <ul>
+                    <li>Name: ${object.contact_name}</li>
+                    <li>Phone Number: ${object.phone}</li>
+                    <li>Email ${object.email_from}</li>
+                    <li>Company: ${object.partner_name}</li>
+                    <li>Subject: ${object.name}</li>
+                    <li>Content: ${object.description}</li>
+                </ul>
+                <p>King Regards,</p>
+                ]]>
             </field>
         </record>
 

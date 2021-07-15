@@ -42,7 +42,7 @@
         <field name="res_model">project.task</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('opportunity_id','=',active_id)]</field>
+        <field name="domain">[('opportunity_id', '=', active_id)]</field>
         <field name="context">{}</field>
         <field name="search_view_id" ref="project.view_task_search_form"/>
         <field name="help" type="html">
@@ -90,9 +90,9 @@
         <field name="name">Leads</field>
         <field name="res_model">crm.lead</field>
         <field name="view_type">form</field>
-        <field name="domain">[('project_id','=', active_id)]</field>
+        <field name="domain">[('project_id', '=', active_id)]</field>
         <field name="view_mode">kanban,tree,form,gantt</field>
-        <field name="context">{'default_project_id':active_id}
+        <field name="context">{'default_project_id': active_id}
         </field>
     </record>
 

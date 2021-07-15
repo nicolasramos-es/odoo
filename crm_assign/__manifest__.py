@@ -48,6 +48,5 @@
     'installable': True,
     'auto_install': False,
     'images': ['static/description/banner.jpg'],
-    'price': 5.00,
-    'currency': 'EUR',
+
 }

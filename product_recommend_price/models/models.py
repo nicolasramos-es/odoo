@@ -62,8 +62,3 @@ class ResCompany(models.Model):
     _inherit = 'res.company'
 
     recommend_bool = fields.Boolean(string='Show Recommend Price in reports', store=True)
-
-
-
-
-

@@ -55,6 +55,4 @@
         "views/report_invoice_recommend.xml",
     ],
     'images': ['static/description/banner.jpg'],
-    'price': 10.00,
-    'currency': 'EUR',
 }

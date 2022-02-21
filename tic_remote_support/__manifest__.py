@@ -1,11 +1,11 @@
 #!/usr/bin/python
 ##############################################
 #
-# Ibérica Sistemas
-# Copyright (C) Ibérica Sistemas
+# Difusion Visual Interactivo
+# Copyright (C) Difusion Visual Interactivo
 # all rights reserved
-# http://ibericasistemas.com
-# contacto@ibericasistemas.com
+# https://difusionvisual.com
+# contacto@difusionvisual.com
 #
 # WARNING: This program as such is intended to be used by professional
 # programmers who take the whole responsability of assessing all potential
@@ -31,25 +31,25 @@
 #
 ###############################################
 {
-    'name': "Tic Remote Support",
+    "name": "Tic Remote Support",
 
-    'summary': """
+    "summary": """
         This module adds new partner tab to add remote access data
         to your clients such as TeamViewer, VNC, ...""",
 
-    # 'description': put the module description in README.rst
+    # "description": put the module description in README.rst
 
-    'author': 'Ibérica Sistemas',
-    'website': "http://ibericasistemas.com",
-    'category': 'Extra Rights',
-    'version': "12.0.1.0.0",
-    'license': 'AGPL-3',
-    'images': ['static/description/banner.jpg'],
-    'depends': [
-        'base',
+    "author": "Difusion Visual Interactivo",
+    "website": "https://difusionvisual.com",
+    "category": "Extra Rights",
+    "version": "12.0.1.0.0",
+    "license": "AGPL-3",
+    "images": ["static/description/banner.jpg"],
+    "depends": [
+        "base",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/tic_remote_support.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/tic_remote_support.xml",
     ],
 }

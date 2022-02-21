@@ -1,11 +1,11 @@
 #!/usr/bin/python
 ##############################################
 #
-# Ibérica Sistemas
-# Copyright (C) Ibérica Sistemas
+# Difusion Visual Interactivo
+# Copyright (C) Difusion Visual Interactivo
 # all rights reserved
-# http://ibericasistemas.com
-# contacto@ibericasistemas.com
+# https://difusionvisual.com
+# contacto@difusionvisual.com
 #
 # WARNING: This program as such is intended to be used by professional
 # programmers who take the whole responsability of assessing all potential
@@ -32,21 +32,22 @@
 ###############################################
 
 {
-    'name': 'CRM Assign',
-    'version': "12.0.1.0.0",
-    'summary': 'Assign oportunity to a Commercial in CRM',
-    'description': 'CRM Assign to Commercial',
-    'category': 'Crm',
-    'author': 'Ibérica Sistemas',
-    'company': 'Ibérica Sistemas',
-    'website': 'www.ibericasistemas.com',
-    'license': 'AGPL-3',
-    'depends': ['base',
-                'crm',
+    "name": "CRM Assign",
+    "version": "12.0.1.0.0",
+    "summary": "Assign oportunity to a Commercial in CRM",
+    "description": "CRM Assign to Commercial",
+    "category": "Crm",
+    "author": "Difusion Visual Interactivo",
+    "company": "Difusion Visual Interactivo",
+    "website": "www.ibericasistemas.com",
+    "license": "OPL-1",
+    "depends": ["base",
+                "crm",
                 ],
-    'data': ['views/crm_assign.xml'],
-    'installable': True,
-    'auto_install': False,
-    'images': ['static/description/banner.jpg'],
+    "data": ["views/crm_assign.xml"],
+    "installable": True,
+    "auto_install": False,
+    "images": ["static/description/banner.jpg"],
+    "installable": True,
 
 }

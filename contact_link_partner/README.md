@@ -16,7 +16,7 @@ Odoo Proprietary License v1.0 (OPL-1)
 
 Company
 -------
-* [Difusión Visual Interactivo <https://difusionvisual.com/>](https://difusionvisual.com)
+* `Difusión Visual Interactivo <https://difusionvisual.com/>`
 
 Credits
 -------

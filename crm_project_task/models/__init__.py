@@ -1,11 +1,11 @@
 #!/usr/bin/python
 ##############################################
 #
-# Ibérica Sistemas
-# Copyright (C) Ibérica Sistemas
+# Difusion Visual Interactivo
+# Copyright (C) Difusion Visual Interactivo
 # all rights reserved
-# http://ibericasistemas.com
-# contacto@ibericasistemas.com
+# https://difusionvisual.com
+# contacto@difusionvisual.com
 #
 # WARNING: This program as such is intended to be used by professional
 # programmers who take the whole responsability of assessing all potential

@@ -1,11 +1,11 @@
 #!/usr/bin/python
 ##############################################
 #
-# Ibérica Sistemas
-# Copyright (C) Ibérica Sistemas
+# Difusion Visual Interactivo
+# Copyright (C) Difusion Visual Interactivo
 # all rights reserved
-# http://ibericasistemas.com
-# contacto@ibericasistemas.com
+# https://difusionvisual.com
+# contacto@difusionvisual.com
 #
 # WARNING: This program as such is intended to be used by professional
 # programmers who take the whole responsability of assessing all potential
@@ -31,30 +31,30 @@
 #
 ###############################################
 {
-    'name': "Product Hide Cost",
+    "name": "Product Hide Cost",
 
-    'summary': """
+    "summary": """
         This module hide product cost and sale""",
 
-    # 'description': put the module description in README.rst
+    # "description": put the module description in README.rst
 
-    'author': 'Ibérica Sistemas',
-    'contributors': [
-        "Nicolás Ramos <contacto@ibericasistemas.com>",
+    "author": "Difusion Visual Interactivo",
+    "contributors": [
+        "Nicolás Ramos <contacto@difusionvisual.com>",
     ],
-    'website': "http://ibericasistemas.com",
-    'category': 'Extra Rights',
-    'version': "12.0.1.0.0",
-    'license': 'AGPL-3',
-    # 'images': ['static/description/screen_01.png'],
-    'depends': [
-        'base',
-        'product',
+    "website": "https://difusionvisual.com",
+    "category": "Extra Rights",
+    "version": "12.0.1.0.0",
+    "license": "AGPL-3",
+    # "images": ["static/description/screen_01.png"],
+    "depends": [
+        "base",
+        "product",
     ],
-    'data': [
-        # 'security/ir.model.access.csv',
-        'views/product_hide_cost.xml',
-        'security/security.xml',
+    "data": [
+        # "security/ir.model.access.csv",
+        "views/product_hide_cost.xml",
+        "security/security.xml",
     ],
-    'images': ['static/description/banner.jpg'],
+    "images": ["static/description/banner.jpg"],
 }

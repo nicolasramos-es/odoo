@@ -1,11 +1,11 @@
 #!/usr/bin/python
 ##############################################
 #
-# Ibérica Sistemas
-# Copyright (C) Ibérica Sistemas
+# Difusion Visual Interactivo
+# Copyright (C) Difusion Visual Interactivo
 # all rights reserved
-# http://ibericasistemas.com
-# contacto@ibericasistemas.com
+# https://difusionvisual.com
+# contacto@difusionvisual.com
 #
 # WARNING: This program as such is intended to be used by professional
 # programmers who take the whole responsability of assessing all potential
@@ -31,27 +31,28 @@
 #
 ###############################################
 {
-    'name': "Contact Link Partner",
+    "name": "Contact Link Partner",
 
-    'summary': """
+    "summary": """
         Add button to link contact partner""",
 
-    # 'description': put the module description in README.rst
+    # "description": put the module description in README.rst
 
-    'author': 'Ibérica Sistemas',
-    'contributors': [
-        "Nicolás Ramos <contacto@ibericasistemas.com>",
+    "author": "Difusion Visual Interactivo",
+    "contributors": [
+        "Nicolás Ramos <contacto@difusionvisual.com>",
     ],
-    'website': "https://ibericasistemas.com",
-    'category': 'Extra Rights',
-    'version': "12.0.1.0.0",
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
+    "website": "https://difusionvisual.com",
+    "category": "Extra Rights",
+    "version": "12.0.1.0.0",
+    "license": "OPL-1",
+    "depends": [
+        "base",
     ],
-    'images': ['static/description/banner.gif'],
-    'data': [
-        'views/view.xml',
+    "images": ["static/description/banner.png"],
+    "data": [
+        "views/view.xml",
     ],
+    "installable": True,
 
 }

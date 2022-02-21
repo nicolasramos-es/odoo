@@ -1,10 +1,10 @@
 ##############################################
 #
-# Ibérica Sistemas
-# Copyright (C) Ibérica Sistemas
+# Difusion Visual Interactivo
+# Copyright (C) Difusion Visual Interactivo
 # all rights reserved
-# http://ibericasistemas.com
-# contacto@ibericasistemas.com
+# https://difusionvisual.com
+# contacto@difusionvisual.com
 #
 # WARNING: This program as such is intended to be used by professional
 # programmers who take the whole responsability of assessing all potential
@@ -36,9 +36,9 @@
     "version": "12.0.1.0.0",
     "category": "Purchase",
     "website": "http://www.ibericasistemas.com",
-    "author": "Ibérica Sistemas",
+    "author": "Difusion Visual Interactivo",
     'contributors': [
-        "Nicolás Ramos <contacto@ibericasistemas.com>",
+        "Nicolás Ramos <contacto@difusionvisual.com>",
     ],
     "license": "AGPL-3",
     "application": False,

@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 ##############################################
 #
-# Ibérica Sistemas
-# Copyright (C) Ibérica Sistemas
+# Difusion Visual Interactivo
+# Copyright (C) Difusion Visual Interactivo
 # all rights reserved
-# http://ibericasistemas.com
-# contacto@ibericasistemas.com
+# https://difusionvisual.com
+# contacto@difusionvisual.com
 #
 # WARNING: This program as such is intended to be used by professional
 # programmers who take the whole responsability of assessing all potential
@@ -38,8 +38,8 @@
     "summary": "Send an email when the Web contact form is sent",
     "description": "Send an email when the Web contact form is sent",
     "category": "Website",
-    "author": "Ibérica Sistemas",
-    "company": "Ibérica Sistemas",
+    "author": "Difusion Visual Interactivo",
+    "company": "Difusion Visual Interactivo",
     "website": "www.ibericasistemas.com",
     "license": "AGPL-3",
     "depends": ["website_crm"],

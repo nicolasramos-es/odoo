@@ -1,11 +1,11 @@
 #!/usr/bin/python
 ##############################################
 #
-# Ibérica Sistemas
-# Copyright (C) Ibérica Sistemas
+# Difusion Visual Interactivo
+# Copyright (C) Difusion Visual Interactivo
 # all rights reserved
-# http://ibericasistemas.com
-# contacto@ibericasistemas.com
+# https://difusionvisual.com
+# contacto@difusionvisual.com
 #
 # WARNING: This program as such is intended to be used by professional
 # programmers who take the whole responsability of assessing all potential
@@ -31,28 +31,28 @@
 #
 ###############################################
 {
-    'name': 'Lead to Task',
-    'version': "12.0.1.0.0",
-    'summary': """Create Tasks from Leads and add count task in project""",
-    'description': """Create Tasks from Leads and add count task in project""",
-    'author': 'Ibérica Sistemas',
-    'company': 'Ibérica Sistemas',
-    'website': 'http://www.ibericasistemas.com',
-    'category': 'Sales',
-    'license': 'AGPL-3',
-    'depends': [
-        'crm',
-        'project',
-        'hr_timesheet',
+    "name": "Lead to Task",
+    "version": "12.0.1.0.0",
+    "summary": """Create Tasks from Leads and add count task in project""",
+    "description": """Create Tasks from Leads and add count task in project""",
+    "author": "Difusion Visual Interactivo",
+    "company": "Difusion Visual Interactivo",
+    "website": "http://www.ibericasistemas.com",
+    "category": "Sales",
+    "license": "AGPL-3",
+    "depends": [
+        "crm",
+        "project",
+        "hr_timesheet",
     ],
-    'data': [
-        # 'security/ir.model.access.csv',
-        'wizard/crm_lead2projecttask_wizard_view.xml',
-        'views/crm_lead_views.xml',
+    "data": [
+        # "security/ir.model.access.csv",
+        "wizard/crm_lead2projecttask_wizard_view.xml",
+        "views/crm_lead_views.xml",
     ],
-    'images': ['static/description/banner.jpg'],
-    'demo': [],
-    'application': False,
-    'installable': True,
-    'auto_install': False,
+    "images": ["static/description/banner.jpg"],
+    "demo": [],
+    "application": False,
+    "installable": True,
+    "auto_install": False,
 }

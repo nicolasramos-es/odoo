@@ -1,9 +1,12 @@
-# Contact Link Partner
+# CRM Assign to me
 =================================
-* This model add a button on partner form to go partner an clic button contact.
+* This model add a button on crm and a action menu option to assign opportunities to me.
 
-![contact_link_partner](static/description/contact_link_partner.png)
+![contact_link_partner](static/description/crm_assign.png)
 
+* Assign multiple opportunities to me in the tree view 
+
+![contact_link_partner](static/description/crm_assign_1.png)
 
 Configuration
 =============
@@ -16,7 +19,7 @@ Odoo Proprietary License v1.0 (OPL-1)
 
 Company
 -------
-* [Difusión Visual Interactivo <https://difusionvisual.com/>](https://difusionvisual.com)
+* `Difusión Visual Interactivo <https://difusionvisual.com/>`
 
 Credits
 -------

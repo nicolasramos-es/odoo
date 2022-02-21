@@ -1,0 +1,50 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* warning_open_sale_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-21 21:59+0000\n"
+"PO-Revision-Date: 2022-02-21 22:04+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.3\n"
+"Last-Translator: \n"
+"Language: es\n"
+
+#. module: warning_open_sale_order
+#: model:ir.model.fields,field_description:warning_open_sale_order.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: warning_open_sale_order
+#: model:ir.model.fields,field_description:warning_open_sale_order.field_sale_order__id
+msgid "ID"
+msgstr "ID"
+
+#. module: warning_open_sale_order
+#: model:ir.model.fields,field_description:warning_open_sale_order.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: warning_open_sale_order
+#: code:addons/warning_open_sale_order/models/models.py:0
+#, python-format
+msgid "Notice!"
+msgstr "Aviso!"
+
+#. module: warning_open_sale_order
+#: model:ir.model,name:warning_open_sale_order.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de Ventas"
+
+#. module: warning_open_sale_order
+#: code:addons/warning_open_sale_order/models/models.py:0
+#, fuzzy, python-format
+msgid "This customer has other open sales orders pending invoiced!\n"
+msgstr "¡Este cliente tiene otros pedidos de ventas abiertos pendientes de facturar!\n"

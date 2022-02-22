@@ -32,12 +32,12 @@
 ###############################################
 {
     "name": "Lead to Task",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.0.1",
     "summary": """Create Tasks from Leads and add count task in project""",
     "description": """Create Tasks from Leads and add count task in project""",
     "author": "Difusion Visual Interactivo",
     "company": "Difusion Visual Interactivo",
-    "website": "http://www.ibericasistemas.com",
+    "website": "http://difusionvisual.com",
     "category": "Sales",
     "license": "AGPL-3",
     "depends": [
@@ -50,7 +50,7 @@
         "wizard/crm_lead2projecttask_wizard_view.xml",
         "views/crm_lead_views.xml",
     ],
-    "images": ["static/description/banner.jpg"],
+    "images": ["static/description/banner.png"],
     "demo": [],
     "application": False,
     "installable": True,

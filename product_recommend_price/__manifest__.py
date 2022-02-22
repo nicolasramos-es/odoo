@@ -33,9 +33,9 @@
 {
     "name": "Recommend Price in product",
     "summary": "Recommended price for products",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.0.1",
     "category": "Stock",
-    "website": "http://www.ibericasistemas.com",
+    "website": "http://difusionvisual.com",
     "author": "Difusion Visual Interactivo",
     "contributors": [
         "Nicolás Ramos <contacto@difusionvisual.com>",
@@ -54,5 +54,5 @@
         "views/report_saleorder_recommend.xml",
         "views/report_invoice_recommend.xml",
     ],
-    "images": ["static/description/banner.jpg"],
+    "images": ["static/description/banner.png"],
 }

@@ -42,9 +42,9 @@
     "author": "Difusion Visual Interactivo",
     "website": "https://difusionvisual.com",
     "category": "Extra Rights",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.0.1",
     "license": "AGPL-3",
-    "images": ["static/description/banner.jpg"],
+    "images": ["static/description/banner.png"],
     "depends": [
         "base",
     ],

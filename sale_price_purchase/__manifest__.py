@@ -33,9 +33,9 @@
 {
     "name": "Sale Price in purchase order",
     "summary": "Add sale price in purchase order",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.0.1",
     "category": "Purchase",
-    "website": "http://www.ibericasistemas.com",
+    "website": "http://difusionvisual.com",
     "author": "Difusion Visual Interactivo",
     'contributors': [
         "Nicolás Ramos <contacto@difusionvisual.com>",
@@ -50,5 +50,5 @@
     "data": [
         "views/sale_price_purchase.xml",
     ],
-    'images': ['static/description/banner.jpg'],
+    'images': ['static/description/banner.png'],
 }

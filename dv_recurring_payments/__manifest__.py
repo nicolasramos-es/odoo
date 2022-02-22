@@ -20,20 +20,30 @@
 #
 ########################################################################################
 
-
 {
-    "name": "Website Contact Form Email Notification",
-    "version": "12.0.1.0.3",
-    "summary": "Send an email when the Web contact form is sent",
-    "description": "Send an email when the Web contact form is sent",
-    "category": "Website",
+    "name": "Account Recurring Payments",
+    "version": "12.0.0.0.1",
+    "summary": """Account Recurring Payments""",
+    "description": """Account Recurring Payments""",
+    "category": "Accounting",
     "author": "Difusion Visual Interactivo",
-    "company": "Difusion Visual Interactivo",
-    "website": "difusionvisual.com",
-    "license": "AGPL-3",
-    "depends": ["website_crm"],
-    "data": ["data/website_form_email_data.xml"],
+    "company": "Difusion Visual Interactivo SL",
+    "website": "https://difusionvisual.com",
+    "maintainer": "Difusion Visual Interactivo",
+    "contributors": [
+        "Nicolás Ramos <contacto@difusionvisual.com>",
+    ],
+    "depends": ["base", "account"],
+    "data": [
+        "security/ir.model.access.csv",
+        "data/recurring_entry_cron.xml",
+        "views/dv_recurring_payments_view.xml",
+       
+    ],
+    "qweb": [],
+    "license": "OPL-1",
     "installable": True,
     "auto_install": False,
+    "application": False,
     "images": ["static/description/banner.png"],
 }

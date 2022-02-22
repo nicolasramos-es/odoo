@@ -20,20 +20,4 @@
 #
 ########################################################################################
 
-
-{
-    "name": "Website Contact Form Email Notification",
-    "version": "12.0.1.0.3",
-    "summary": "Send an email when the Web contact form is sent",
-    "description": "Send an email when the Web contact form is sent",
-    "category": "Website",
-    "author": "Difusion Visual Interactivo",
-    "company": "Difusion Visual Interactivo",
-    "website": "difusionvisual.com",
-    "license": "AGPL-3",
-    "depends": ["website_crm"],
-    "data": ["data/website_form_email_data.xml"],
-    "installable": True,
-    "auto_install": False,
-    "images": ["static/description/banner.png"],
-}
+from . import models

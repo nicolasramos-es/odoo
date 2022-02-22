@@ -33,13 +33,13 @@
 
 {
     "name": "CRM Assign",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.0.1",
     "summary": "Assign oportunity to a Commercial in CRM",
     "description": "CRM Assign to Commercial",
     "category": "Crm",
     "author": "Difusion Visual Interactivo",
     "company": "Difusion Visual Interactivo",
-    "website": "www.ibericasistemas.com",
+    "website": "difusionvisual.com",
     "license": "OPL-1",
     "depends": ["base",
                 "crm",
@@ -47,7 +47,7 @@
     "data": ["views/crm_assign.xml"],
     "installable": True,
     "auto_install": False,
-    "images": ["static/description/banner.jpg"],
+    "images": ["static/description/banner.png"],
     "installable": True,
 
 }

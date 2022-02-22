@@ -44,7 +44,7 @@
     ],
     "website": "https://difusionvisual.com",
     "category": "Extra Rights",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.0.1",
     "license": "OPL-1",
     "depends": [
         "base",

@@ -19,25 +19,6 @@
 #    DEALINGS IN THE SOFTWARE.
 #
 ########################################################################################
-{
-    'name': "Warning another Sales order",
-    'summary': """
-        Create warning in sales order and another one is already open and pending invoiced. """,
-    'author': 'Difusión Visual Interactivo',
-    'contributors': [
-        "Nicolás Ramos <contacto@difusionvisual.com>",
-    ],
-    'website': "https://difusionvisual.com",
-    'category': 'Sales',
-    'version': "14.0.1.0.0",
-    'license': 'OPL-1',
-    'depends': [
-        'base',
-        'sale_management'
-    ],
-    'images': ['static/description/banner.png'],
-    'data': [
-    ],
-    'installable': True,
-    'application': False,
-}
+
+
+from . import models

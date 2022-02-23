@@ -20,9 +20,9 @@
 #
 ########################################################################################
 {
-    'name': "Warning another Sales order",
+    'name': "Sale Order Extend",
     'summary': """
-        Create warning in sales order and another one is already open and pending invoiced. """,
+        Adds to the sales order the units and total invoiced, shipped and total lines. """,
     'author': 'Difusión Visual Interactivo',
     'contributors': [
         "Nicolás Ramos <contacto@difusionvisual.com>",
@@ -37,6 +37,7 @@
     ],
     'images': ['static/description/banner.png'],
     'data': [
+        'view/dv_sale_order_extend.xml'
     ],
     'installable': True,
     'application': False,

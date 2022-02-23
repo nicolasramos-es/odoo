@@ -1,5 +1,8 @@
-# Warning another Sales order
-* Create warning in sales order and another one is already open and pending invoiced
+# Sale Order Extend
+* Adds to the sales order the units and total invoiced, shipped and total lines
+![Sale order extend](/static/description/image1.png)
+
+![Sale order extend](/static/description/image2.png)
 
 
 Configuration
@@ -9,7 +12,7 @@ Configuration
 License
 -------
 Odoo Proprietary License v1.0 (OPL-1)
-(https://www.odoo.com/documentation/user/12.0/legal/licenses/licenses.html)
+(https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html)
 
 Company
 -------

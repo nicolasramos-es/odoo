@@ -1,50 +1,39 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-##############################################
+######################################################################################
 #
-# Ibérica Sistemas
-# Copyright (C) Ibérica Sistemas
-# all rights reserved
-# http://ibericasistemas.com
-# contacto@ibericasistemas.com
+#    DIFUSION VISUAL INTERACTIVO S.L.
 #
-# WARNING: This program as such is intended to be used by professional
-# programmers who take the whole responsability of assessing all potential
-# consequences resulting from its eventual inadequacies and bugs.
-# End users who are looking for a ready-to-use solution with commercial
-# garantees and support are strongly adviced to contract a Free Software
-# Service Company.
+#    Copyright (C) 2014-NOW Difusión Visual(<https://difusionvisual.com>).
+#    Author: Nicolás Ramos (Contact : contacto@difusionvisual.com)
 #
-# This program is Free Software; you can redistribute it and/or
-# modify it under the terms of the GNU Affero General Public License
-# as published by the Free Software Foundation; either version 3
-# of the License, or (at your option) any later version.
+#    This program is under the terms of the Odoo Proprietary License v1.0 (OPL-1)
+#    It is forbidden to publish, distribute, sublicense, or sell copies of the Software
+#    or modified copies of the Software.
 #
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
+#    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+#    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+#    DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+#    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+#    DEALINGS IN THE SOFTWARE.
 #
-# You should have received a copy of the GNU Affero General Public License
-# along with this program; if not, see <http://www.gnu.org/licenses/> or
-# write to the Free Software Foundation, Inc.,
-# 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-#
-###############################################
+########################################################################################
+
 
 {
     "name": "Website Contact Form Email Notification",
-    "version": "12.0.1.0.2",
+    "version": "13.0.1.0.0",
     "summary": "Send an email when the Web contact form is sent",
     "description": "Send an email when the Web contact form is sent",
     "category": "Website",
-    "author": "Ibérica Sistemas",
-    "company": "Ibérica Sistemas",
-    "website": "www.ibericasistemas.com",
+    "author": "Difusion Visual Interactivo",
+    "company": "Difusion Visual Interactivo",
+    "website": "difusionvisual.com",
     "license": "AGPL-3",
     "depends": ["website_crm"],
     "data": ["data/website_form_email_data.xml"],
     "installable": True,
     "auto_install": False,
-    "images": ["static/description/banner.jpg"],
+    "images": ["static/description/banner.png"],
 }

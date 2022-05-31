@@ -4,7 +4,7 @@
 # NICOLASRAMOS.ES
 # Copyright (C) NICOLASRAMOS.ES
 # all rights reserved
-# http://nicolasramos.es
+# https://nicolasramos.es
 # contacto@nicolasramos.es
 #
 # WARNING: This program as such is intended to be used by professional

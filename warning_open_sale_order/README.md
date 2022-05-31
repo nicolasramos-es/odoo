@@ -9,7 +9,6 @@
 ## License
 
 Odoo Proprietary License v1.0 (OPL-1)
-(https://www.odoo.com/documentation/user/12.0/legal/licenses/licenses.html)
 
 ## Company
 

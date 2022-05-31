@@ -4,7 +4,7 @@
 # Nicolás Ramos S.L.
 # Copyright (C) Nicolás Ramos S.L.
 # all rights reserved
-# http://nicolasramos.es
+# https://nicolasramos.es
 # contacto@nicolasramos.es
 #
 # WARNING: This program as such is intended to be used by professional

@@ -4,7 +4,7 @@
 # Nicolás Ramos S.L.
 # Copyright (C) Nicolás Ramos S.L.
 # all rights reserved
-# http://nicolasramos.es
+# https://nicolasramos.es
 # contacto@nicolasramos.es
 #
 # WARNING: This program as such is intended to be used by professional
@@ -35,8 +35,8 @@
     "summary": """
         purchase_limit_order_lines""",
     # 'description': put the module description in README.rst
-    "author": "Nicolás Ramos S.L.",
-    "website": "http://nicolasramos.es",
+    "author": "Nicolás Ramos",
+    "website": "https://nicolasramos.es",
     "category": "Extra Rights",
     "version": "14.0.1.0.0",
     "license": "AGPL-3",

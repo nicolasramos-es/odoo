@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 ######################################################################################
 #
-#    DIFUSION VISUAL INTERACTIVO S.L.
+#    NICOLASRAMOS.ES
 #
-#    Copyright (C) 2014-NOW Difusión Visual(<https://www.difusionvisual.com>).
-#    Author: Nicolás Ramos (Contact : contacto@difusionvisual.com)
+#    Copyright (C) 2014-NOW Nicolás Ramos(<https://www.nicolasramos.es>).
+#    Author: Nicolás Ramos (Contact : contacto@nicolasramos.es)
 #
 #    This program is under the terms of the Odoo Proprietary License v1.0 (OPL-1)
 #    It is forbidden to publish, distribute, sublicense, or sell copies of the Software
@@ -65,12 +65,13 @@ class SaleOrder(models.Model):
             lineas = lineas + 1
         self.numero_lineas = lineas
 
-    total_facturado = fields.Float(string=_(
-        'Total invoiced'), store=True, readonly=True, compute='_total_facturado')
-    total_entregado = fields.Float(string=_(
-        'Total delivered'), store=True, readonly=True, compute='_total_entregado')
-
-    2
-    numero_lineas = fields.Integer(
-        string='Number of lines', compute='_total_lineas'
-    )
+    total_facturado = fields.Float(string=_('Total invoiced'),
+                                   store=True,
+                                   readonly=True,
+                                   compute='_total_facturado')
+    total_entregado = fields.Float(string=_('Total delivered'),
+                                   store=True,
+                                   readonly=True,
+                                   compute='_total_entregado')
+    numero_lineas = fields.Integer(string='Number of lines',
+                                   compute='_total_lineas')

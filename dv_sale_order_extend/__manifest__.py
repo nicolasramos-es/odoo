@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 ######################################################################################
 #
-#    DIFUSION VISUAL INTERACTIVO S.L.
+#    NICOLASRAMOS.ES
 #
-#    Copyright (C) 2014-NOW Difusión Visual(<https://www.difusionvisual.com>).
-#    Author: Nicolás Ramos (Contact : contacto@difusionvisual.com)
+#    Copyright (C) 2014-NOW Nicolás Ramos(<https://www.nicolasramos.es>).
+#    Author: Nicolás Ramos (Contact : contacto@nicolasramos.es)
 #
 #    This program is under the terms of the Odoo Proprietary License v1.0 (OPL-1)
 #    It is forbidden to publish, distribute, sublicense, or sell copies of the Software
@@ -23,22 +23,17 @@
     'name': "Sale Order Extend",
     'summary': """
         Adds to the sales order the units and total invoiced, shipped and total lines. """,
-    'author': 'Difusión Visual Interactivo',
+    'author': 'Nicolás Ramos',
     'contributors': [
-        "Nicolás Ramos <contacto@difusionvisual.com>",
+        "Nicolás Ramos <contacto@nicolasramos.es>",
     ],
-    'website': "https://difusionvisual.com",
+    'website': "https://nicolasramos.es",
     'category': 'Sales',
     'version': "14.0.1.0.0",
     'license': 'OPL-1',
-    'depends': [
-        'base',
-        'sale_management'
-    ],
+    'depends': ['base', 'sale_management'],
     'images': ['static/description/banner.png'],
-    'data': [
-        'view/dv_sale_order_extend.xml'
-    ],
+    'data': ['view/dv_sale_order_extend.xml'],
     'installable': True,
     'application': False,
 }

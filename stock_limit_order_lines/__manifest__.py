@@ -1,8 +1,8 @@
 #!/usr/bin/python
 ##############################################
 #
-# Nicolás Ramos
-# Copyright (C) Nicolás Ramos
+# Nicolás Ramos S.L.
+# Copyright (C) Nicolás Ramos S.L.
 # all rights reserved
 # http://nicolasramos.es
 # contacto@nicolasramos.es
@@ -30,5 +30,21 @@
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 ###############################################
-
-from . import models
+{
+    "name": "stock_limit_order_lines",
+    "summary": """
+        stock_limit_order_lines""",
+    # 'description': put the module description in README.rst
+    "author": "Nicolás Ramos",
+    "website": "https://nicolasramos.es",
+    "category": "Extra Rights",
+    "version": "14.0.1.0.0",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "stock",
+    ],
+    "data": [
+        "views/stock_limit_order_lines.xml",
+    ],
+}

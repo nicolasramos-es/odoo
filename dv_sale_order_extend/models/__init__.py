@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 ######################################################################################
 #
-#    DIFUSION VISUAL INTERACTIVO S.L.
+#    NICOLASRAMOS.ES
 #
-#    Copyright (C) 2014-NOW Difusión Visual(<https://www.difusionvisual.com>).
-#    Author: Nicolás Ramos (Contact : contacto@difusionvisual.com)
+#    Copyright (C) 2014-NOW Nicolás Ramos(<https://www.nicolasramos.es>).
+#    Author: Nicolás Ramos (Contact : contacto@nicolasramos.es)
 #
 #    This program is under the terms of the Odoo Proprietary License v1.0 (OPL-1)
 #    It is forbidden to publish, distribute, sublicense, or sell copies of the Software
@@ -19,6 +19,5 @@
 #    DEALINGS IN THE SOFTWARE.
 #
 ########################################################################################
-
 
 from . import models

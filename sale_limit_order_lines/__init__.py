@@ -1,8 +1,8 @@
 #!/usr/bin/python
 ##############################################
 #
-# Nicolás Ramos
-# Copyright (C) Nicolás Ramos
+# NICOLASRAMOS.ES
+# Copyright (C) NICOLASRAMOS.ES
 # all rights reserved
 # http://nicolasramos.es
 # contacto@nicolasramos.es
@@ -30,5 +30,3 @@
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 ###############################################
-
-from . import models

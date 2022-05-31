@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 ######################################################################################
 #
-#    DIFUSION VISUAL INTERACTIVO S.L.
+#    NICOLASRAMOS.ES
 #
-#    Copyright (C) 2014-NOW Difusión Visual(<https://www.difusionvisual.com>).
-#    Author: Nicolás Ramos (Contact : contacto@difusionvisual.com)
+#    Copyright (C) 2014-NOW Nicolás Ramos(<https://www.nicolasramos.es>).
+#    Author: Nicolás Ramos (Contact : contacto@nicolasramos.es)
 #
 #    This program is under the terms of the Odoo Proprietary License v1.0 (OPL-1)
 #    It is forbidden to publish, distribute, sublicense, or sell copies of the Software
@@ -20,7 +20,6 @@
 #
 ########################################################################################
 
-
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError, ValidationError
 
@@ -30,12 +29,16 @@ class ContactLink(models.Model):
 
     @api.onchange('partner_id')
     def _onchange_partner_id(self):
-        sales = self.env['sale.order'].search([('partner_id', '=', self.partner_id.id), ('invoice_status', '=', 'to invoice')])
+        sales = self.env['sale.order'].search([
+            ('partner_id', '=', self.partner_id.id),
+            ('invoice_status', '=', 'to invoice')
+        ])
         if len(sales) >= 1:
             warning_mess = {
-                    'title': _('Notice!'),
-                    'message': _(
-                        'This customer has other open sales orders pending invoiced!\n')
-                }
+                'title':
+                _('Notice!'),
+                'message':
+                _('This customer has other open sales orders pending invoiced!\n'
+                  )
+            }
             return {'warning': warning_mess}
-       

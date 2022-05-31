@@ -1,8 +1,8 @@
 #!/usr/bin/python
 ##############################################
 #
-# Nicolás Ramos
-# Copyright (C) Nicolás Ramos
+# NICOLASRAMOS.ES
+# Copyright (C) NICOLASRAMOS.ES
 # all rights reserved
 # http://nicolasramos.es
 # contacto@nicolasramos.es
@@ -31,4 +31,20 @@
 #
 ###############################################
 
-from . import models
+{
+    'name': 'remove_suitable_journal_ids',
+    'version': "14.0.1.0.0",
+    'summary': 'remove_suitable_journal_ids',
+    'description': 'remove_suitable_journal_ids',
+    'category': 'Custom Modifications',
+    'author': 'Nicolás Ramos',
+    'company': 'NicolásRamos.es',
+    'website': 'www.nicolasramos.es',
+    'license': 'OPL-1',
+    'depends': ['base',
+                'account',
+                ],
+    'data': ['views/remove_suitable_journal_ids.xml'],
+    'installable': True,
+    'auto_install': False,
+}

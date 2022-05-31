@@ -1,11 +1,11 @@
 #!/usr/bin/python
 ##############################################
 #
-# Difusión Visual Interactivo
-# Copyright (C) Difusión Visual Interactivo
+# Nicolás Ramos
+# Copyright (C) Nicolás Ramos
 # all rights reserved
-# http://difusionvisual.com
-# contacto@difusionvisual.com
+# http://nicolasramos.es
+# contacto@nicolasramos.es
 #
 # WARNING: This program as such is intended to be used by professional
 # programmers who take the whole responsability of assessing all potential

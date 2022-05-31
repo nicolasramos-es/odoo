@@ -33,6 +33,6 @@ Bugs are tracked on GitHub Issues. In case of trouble, please check there if you
 
 # Maintainer
 
-This module is maintained by DIFUSION VISUAL INTERACTIVO SL
+This module is maintained by NICOLASRAMOS.ES
 
 For support and more information, please visit https://nicolasramos.es

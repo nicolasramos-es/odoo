@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="sale_pos_report_graph" model="ir.ui.view">
+            <field name="name">sale.pos.report.graph</field>
+            <field name="model">sale.pos.report</field>
+            <field name="arch" type="xml">
+                <graph string="TPV Report" type="pivot">
+                    <field name="product_categ_id" type="row"/>
+                    <field name="date" interval="month" type="col"/>
+                    <field name="product_qty" type="measure"/>
+                    <field name="price_total" type="measure"/>
+                </graph>
+            </field>
+        </record>
+
+        <record id="sale_pos_report_search" model="ir.ui.view">
+            <field name="name">sale.pos.report.search</field>
+            <field name="model">sale.pos.report</field>
+            <field name="arch" type="xml">
+                <search string="TPV Report">
+                    <field name="date"/>
+                    <filter string="Invoiced" domain="[('state','=',('invoiced'))]"/>
+                    <filter string="Not Invoiced" domain="[('state','=',('paid'))]"/>
+                    <separator/>
+                    <filter string="Year" name="year"
+                            domain="[('date','&lt;=', time.strftime('%%Y-%%m-%%d')),('date','&gt;=',time.strftime('%%Y-01-01'))]"
+                            help="POS ordered created during current year"/>
+                    <separator/>
+                    <filter string="My Sales" help="My Sales" domain="[('user_id','=',uid)]"/>
+                    <field name="partner_id"/>
+                    <field name="user_id"/>
+                    <field name="product_id"/>
+                    <field name="product_categ_id"/>
+                    <group expand="1" string="Group By">
+                        <filter string="Salesperson" name="User" context="{'group_by':'user_id'}"/>
+                        <filter string="Product Category" context="{'group_by':'product_categ_id'}"/>
+                        <filter string="Product" context="{'group_by':'product_id'}"/>
+                        <separator/>
+                        <filter string="Order Month" context="{'group_by':'date:month'}" help="Month of order date"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="sale_pos_report_action" model="ir.actions.act_window">
+            <field name="name">TPV Report Advanced</field>
+            <field name="res_model">sale.pos.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">graph</field>
+            <field name="search_view_id" ref="sale_pos_report_search"/>
+            <field name="context">{'group_by_no_leaf':1,'group_by':[]}</field>
+        </record>
+
+        <menuitem id="sale_pos_report_title_menu" parent="base.menu_reporting"
+                  name="TPV Advanced Report" sequence="9"/>
+
+        <menuitem id="sale_pos_report_menu" action="sale_pos_report_action"
+                  parent="sale_pos_report_title_menu" sequence="10"/>
+    </data>
+</openerp>
